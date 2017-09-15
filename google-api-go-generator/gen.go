@@ -1890,7 +1890,7 @@ func (meth *Method) generateCode() {
 		pn(`})`)
 	}
 
-	pn("return gensupport.SendRequest(c.ctx_, c.s.client, req)")
+	pn("return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, %q), c.s.client, req)", meth.m.ID)
 	pn("}")
 
 	if meth.supportsMediaDownload() {
