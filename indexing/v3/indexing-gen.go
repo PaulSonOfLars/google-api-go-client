@@ -276,7 +276,7 @@ func (c *UrlNotificationsGetMetadataCall) doRequest(alt string) (*http.Response,
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "indexing.urlNotifications.getMetadata"), c.s.client, req)
 }
 
 // Do executes the "indexing.urlNotifications.getMetadata" call.
@@ -396,7 +396,7 @@ func (c *UrlNotificationsPublishCall) doRequest(alt string) (*http.Response, err
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "indexing.urlNotifications.publish"), c.s.client, req)
 }
 
 // Do executes the "indexing.urlNotifications.publish" call.

@@ -4989,7 +4989,7 @@ func (c *AnnotationsBatchCreateCall) doRequest(alt string) (*http.Response, erro
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.annotations.batchCreate"), c.s.client, req)
 }
 
 // Do executes the "genomics.annotations.batchCreate" call.
@@ -5135,7 +5135,7 @@ func (c *AnnotationsCreateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.annotations.create"), c.s.client, req)
 }
 
 // Do executes the "genomics.annotations.create" call.
@@ -5256,7 +5256,7 @@ func (c *AnnotationsDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"annotationId": c.annotationId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.annotations.delete"), c.s.client, req)
 }
 
 // Do executes the "genomics.annotations.delete" call.
@@ -5396,7 +5396,7 @@ func (c *AnnotationsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"annotationId": c.annotationId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.annotations.get"), c.s.client, req)
 }
 
 // Do executes the "genomics.annotations.get" call.
@@ -5536,7 +5536,7 @@ func (c *AnnotationsSearchCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.annotations.search"), c.s.client, req)
 }
 
 // Do executes the "genomics.annotations.search" call.
@@ -5698,7 +5698,7 @@ func (c *AnnotationsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"annotationId": c.annotationId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.annotations.update"), c.s.client, req)
 }
 
 // Do executes the "genomics.annotations.update" call.
@@ -5845,7 +5845,7 @@ func (c *AnnotationsetsCreateCall) doRequest(alt string) (*http.Response, error)
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.annotationsets.create"), c.s.client, req)
 }
 
 // Do executes the "genomics.annotationsets.create" call.
@@ -5966,7 +5966,7 @@ func (c *AnnotationsetsDeleteCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"annotationSetId": c.annotationSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.annotationsets.delete"), c.s.client, req)
 }
 
 // Do executes the "genomics.annotationsets.delete" call.
@@ -6106,7 +6106,7 @@ func (c *AnnotationsetsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"annotationSetId": c.annotationSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.annotationsets.get"), c.s.client, req)
 }
 
 // Do executes the "genomics.annotationsets.get" call.
@@ -6242,7 +6242,7 @@ func (c *AnnotationsetsSearchCall) doRequest(alt string) (*http.Response, error)
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.annotationsets.search"), c.s.client, req)
 }
 
 // Do executes the "genomics.annotationsets.search" call.
@@ -6406,7 +6406,7 @@ func (c *AnnotationsetsUpdateCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"annotationSetId": c.annotationSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.annotationsets.update"), c.s.client, req)
 }
 
 // Do executes the "genomics.annotationsets.update" call.
@@ -6542,7 +6542,7 @@ func (c *CallsetsCreateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.callsets.create"), c.s.client, req)
 }
 
 // Do executes the "genomics.callsets.create" call.
@@ -6661,7 +6661,7 @@ func (c *CallsetsDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"callSetId": c.callSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.callsets.delete"), c.s.client, req)
 }
 
 // Do executes the "genomics.callsets.delete" call.
@@ -6800,7 +6800,7 @@ func (c *CallsetsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"callSetId": c.callSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.callsets.get"), c.s.client, req)
 }
 
 // Do executes the "genomics.callsets.get" call.
@@ -6946,7 +6946,7 @@ func (c *CallsetsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"callSetId": c.callSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.callsets.patch"), c.s.client, req)
 }
 
 // Do executes the "genomics.callsets.patch" call.
@@ -7088,7 +7088,7 @@ func (c *CallsetsSearchCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.callsets.search"), c.s.client, req)
 }
 
 // Do executes the "genomics.callsets.search" call.
@@ -7231,7 +7231,7 @@ func (c *DatasetsCreateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.datasets.create"), c.s.client, req)
 }
 
 // Do executes the "genomics.datasets.create" call.
@@ -7357,7 +7357,7 @@ func (c *DatasetsDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"datasetId": c.datasetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.datasets.delete"), c.s.client, req)
 }
 
 // Do executes the "genomics.datasets.delete" call.
@@ -7496,7 +7496,7 @@ func (c *DatasetsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"datasetId": c.datasetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.datasets.get"), c.s.client, req)
 }
 
 // Do executes the "genomics.datasets.get" call.
@@ -7635,7 +7635,7 @@ func (c *DatasetsGetIamPolicyCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.datasets.getIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "genomics.datasets.getIamPolicy" call.
@@ -7798,7 +7798,7 @@ func (c *DatasetsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.datasets.list"), c.s.client, req)
 }
 
 // Do executes the "genomics.datasets.list" call.
@@ -7973,7 +7973,7 @@ func (c *DatasetsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"datasetId": c.datasetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.datasets.patch"), c.s.client, req)
 }
 
 // Do executes the "genomics.datasets.patch" call.
@@ -8120,7 +8120,7 @@ func (c *DatasetsSetIamPolicyCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.datasets.setIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "genomics.datasets.setIamPolicy" call.
@@ -8261,7 +8261,7 @@ func (c *DatasetsTestIamPermissionsCall) doRequest(alt string) (*http.Response, 
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.datasets.testIamPermissions"), c.s.client, req)
 }
 
 // Do executes the "genomics.datasets.testIamPermissions" call.
@@ -8401,7 +8401,7 @@ func (c *DatasetsUndeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"datasetId": c.datasetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.datasets.undelete"), c.s.client, req)
 }
 
 // Do executes the "genomics.datasets.undelete" call.
@@ -8540,7 +8540,7 @@ func (c *OperationsCancelCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.operations.cancel"), c.s.client, req)
 }
 
 // Do executes the "genomics.operations.cancel" call.
@@ -8687,7 +8687,7 @@ func (c *OperationsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.operations.get"), c.s.client, req)
 }
 
 // Do executes the "genomics.operations.get" call.
@@ -8882,7 +8882,7 @@ func (c *OperationsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.operations.list"), c.s.client, req)
 }
 
 // Do executes the "genomics.operations.list" call.
@@ -9045,7 +9045,7 @@ func (c *ReadgroupsetsDeleteCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"readGroupSetId": c.readGroupSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.readgroupsets.delete"), c.s.client, req)
 }
 
 // Do executes the "genomics.readgroupsets.delete" call.
@@ -9185,7 +9185,7 @@ func (c *ReadgroupsetsExportCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"readGroupSetId": c.readGroupSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.readgroupsets.export"), c.s.client, req)
 }
 
 // Do executes the "genomics.readgroupsets.export" call.
@@ -9328,7 +9328,7 @@ func (c *ReadgroupsetsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"readGroupSetId": c.readGroupSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.readgroupsets.get"), c.s.client, req)
 }
 
 // Do executes the "genomics.readgroupsets.get" call.
@@ -9474,7 +9474,7 @@ func (c *ReadgroupsetsImportCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.readgroupsets.import"), c.s.client, req)
 }
 
 // Do executes the "genomics.readgroupsets.import" call.
@@ -9617,7 +9617,7 @@ func (c *ReadgroupsetsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"readGroupSetId": c.readGroupSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.readgroupsets.patch"), c.s.client, req)
 }
 
 // Do executes the "genomics.readgroupsets.patch" call.
@@ -9759,7 +9759,7 @@ func (c *ReadgroupsetsSearchCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.readgroupsets.search"), c.s.client, req)
 }
 
 // Do executes the "genomics.readgroupsets.search" call.
@@ -9991,7 +9991,7 @@ func (c *ReadgroupsetsCoveragebucketsListCall) doRequest(alt string) (*http.Resp
 	googleapi.Expand(req.URL, map[string]string{
 		"readGroupSetId": c.readGroupSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.readgroupsets.coveragebuckets.list"), c.s.client, req)
 }
 
 // Do executes the "genomics.readgroupsets.coveragebuckets.list" call.
@@ -10206,7 +10206,7 @@ func (c *ReadsSearchCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.reads.search"), c.s.client, req)
 }
 
 // Do executes the "genomics.reads.search" call.
@@ -10367,7 +10367,7 @@ func (c *ReferencesGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"referenceId": c.referenceId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.references.get"), c.s.client, req)
 }
 
 // Do executes the "genomics.references.get" call.
@@ -10501,7 +10501,7 @@ func (c *ReferencesSearchCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.references.search"), c.s.client, req)
 }
 
 // Do executes the "genomics.references.search" call.
@@ -10697,7 +10697,7 @@ func (c *ReferencesBasesListCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"referenceId": c.referenceId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.references.bases.list"), c.s.client, req)
 }
 
 // Do executes the "genomics.references.bases.list" call.
@@ -10887,7 +10887,7 @@ func (c *ReferencesetsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"referenceSetId": c.referenceSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.referencesets.get"), c.s.client, req)
 }
 
 // Do executes the "genomics.referencesets.get" call.
@@ -11021,7 +11021,7 @@ func (c *ReferencesetsSearchCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.referencesets.search"), c.s.client, req)
 }
 
 // Do executes the "genomics.referencesets.search" call.
@@ -11164,7 +11164,7 @@ func (c *VariantsCreateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variants.create"), c.s.client, req)
 }
 
 // Do executes the "genomics.variants.create" call.
@@ -11283,7 +11283,7 @@ func (c *VariantsDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"variantId": c.variantId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variants.delete"), c.s.client, req)
 }
 
 // Do executes the "genomics.variants.delete" call.
@@ -11422,7 +11422,7 @@ func (c *VariantsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"variantId": c.variantId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variants.get"), c.s.client, req)
 }
 
 // Do executes the "genomics.variants.get" call.
@@ -11572,7 +11572,7 @@ func (c *VariantsImportCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variants.import"), c.s.client, req)
 }
 
 // Do executes the "genomics.variants.import" call.
@@ -11790,7 +11790,7 @@ func (c *VariantsMergeCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variants.merge"), c.s.client, req)
 }
 
 // Do executes the "genomics.variants.merge" call.
@@ -11930,7 +11930,7 @@ func (c *VariantsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"variantId": c.variantId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variants.patch"), c.s.client, req)
 }
 
 // Do executes the "genomics.variants.patch" call.
@@ -12072,7 +12072,7 @@ func (c *VariantsSearchCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variants.search"), c.s.client, req)
 }
 
 // Do executes the "genomics.variants.search" call.
@@ -12221,7 +12221,7 @@ func (c *VariantsetsCreateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variantsets.create"), c.s.client, req)
 }
 
 // Do executes the "genomics.variantsets.create" call.
@@ -12342,7 +12342,7 @@ func (c *VariantsetsDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"variantSetId": c.variantSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variantsets.delete"), c.s.client, req)
 }
 
 // Do executes the "genomics.variantsets.delete" call.
@@ -12474,7 +12474,7 @@ func (c *VariantsetsExportCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"variantSetId": c.variantSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variantsets.export"), c.s.client, req)
 }
 
 // Do executes the "genomics.variantsets.export" call.
@@ -12617,7 +12617,7 @@ func (c *VariantsetsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"variantSetId": c.variantSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variantsets.get"), c.s.client, req)
 }
 
 // Do executes the "genomics.variantsets.get" call.
@@ -12765,7 +12765,7 @@ func (c *VariantsetsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"variantSetId": c.variantSetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variantsets.patch"), c.s.client, req)
 }
 
 // Do executes the "genomics.variantsets.patch" call.
@@ -12907,7 +12907,7 @@ func (c *VariantsetsSearchCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "genomics.variantsets.search"), c.s.client, req)
 }
 
 // Do executes the "genomics.variantsets.search" call.

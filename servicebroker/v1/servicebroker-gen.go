@@ -494,7 +494,7 @@ func (c *V1GetIamPolicyCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "servicebroker.getIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "servicebroker.getIamPolicy" call.
@@ -628,7 +628,7 @@ func (c *V1SetIamPolicyCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "servicebroker.setIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "servicebroker.setIamPolicy" call.
@@ -773,7 +773,7 @@ func (c *V1TestIamPermissionsCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "servicebroker.testIamPermissions"), c.s.client, req)
 }
 
 // Do executes the "servicebroker.testIamPermissions" call.

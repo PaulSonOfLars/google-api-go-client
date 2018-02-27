@@ -2291,7 +2291,7 @@ func (c *AboutGetCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.about.get"), c.s.client, req)
 }
 
 // Do executes the "drive.about.get" call.
@@ -2434,7 +2434,7 @@ func (c *ChangesGetStartPageTokenCall) doRequest(alt string) (*http.Response, er
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.changes.getStartPageToken"), c.s.client, req)
 }
 
 // Do executes the "drive.changes.getStartPageToken" call.
@@ -2642,7 +2642,7 @@ func (c *ChangesListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.changes.list"), c.s.client, req)
 }
 
 // Do executes the "drive.changes.list" call.
@@ -2892,7 +2892,7 @@ func (c *ChangesWatchCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.changes.watch"), c.s.client, req)
 }
 
 // Do executes the "drive.changes.watch" call.
@@ -3078,7 +3078,7 @@ func (c *ChannelsStopCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.channels.stop"), c.s.client, req)
 }
 
 // Do executes the "drive.channels.stop" call.
@@ -3179,7 +3179,7 @@ func (c *CommentsCreateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"fileId": c.fileId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.comments.create"), c.s.client, req)
 }
 
 // Do executes the "drive.comments.create" call.
@@ -3309,7 +3309,7 @@ func (c *CommentsDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"fileId":    c.fileId,
 		"commentId": c.commentId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.comments.delete"), c.s.client, req)
 }
 
 // Do executes the "drive.comments.delete" call.
@@ -3437,7 +3437,7 @@ func (c *CommentsGetCall) doRequest(alt string) (*http.Response, error) {
 		"fileId":    c.fileId,
 		"commentId": c.commentId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.comments.get"), c.s.client, req)
 }
 
 // Do executes the "drive.comments.get" call.
@@ -3620,7 +3620,7 @@ func (c *CommentsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"fileId": c.fileId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.comments.list"), c.s.client, req)
 }
 
 // Do executes the "drive.comments.list" call.
@@ -3801,7 +3801,7 @@ func (c *CommentsUpdateCall) doRequest(alt string) (*http.Response, error) {
 		"fileId":    c.fileId,
 		"commentId": c.commentId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.comments.update"), c.s.client, req)
 }
 
 // Do executes the "drive.comments.update" call.
@@ -3977,7 +3977,7 @@ func (c *FilesCopyCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"fileId": c.fileId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.files.copy"), c.s.client, req)
 }
 
 // Do executes the "drive.files.copy" call.
@@ -4224,7 +4224,7 @@ func (c *FilesCreateCall) doRequest(alt string) (*http.Response, error) {
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
 	gensupport.SetGetBody(req, getBody)
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.files.create"), c.s.client, req)
 }
 
 // Do executes the "drive.files.create" call.
@@ -4417,7 +4417,7 @@ func (c *FilesDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"fileId": c.fileId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.files.delete"), c.s.client, req)
 }
 
 // Do executes the "drive.files.delete" call.
@@ -4515,7 +4515,7 @@ func (c *FilesEmptyTrashCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.files.emptyTrash"), c.s.client, req)
 }
 
 // Do executes the "drive.files.emptyTrash" call.
@@ -4616,7 +4616,7 @@ func (c *FilesExportCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"fileId": c.fileId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.files.export"), c.s.client, req)
 }
 
 // Download fetches the API endpoint's "media" value, instead of the normal
@@ -4762,7 +4762,7 @@ func (c *FilesGenerateIdsCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.files.generateIds"), c.s.client, req)
 }
 
 // Do executes the "drive.files.generateIds" call.
@@ -4923,7 +4923,7 @@ func (c *FilesGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"fileId": c.fileId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.files.get"), c.s.client, req)
 }
 
 // Download fetches the API endpoint's "media" value, instead of the normal
@@ -5181,7 +5181,7 @@ func (c *FilesListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.files.list"), c.s.client, req)
 }
 
 // Do executes the "drive.files.list" call.
@@ -5491,7 +5491,7 @@ func (c *FilesUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"fileId": c.fileId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.files.update"), c.s.client, req)
 }
 
 // Do executes the "drive.files.update" call.
@@ -5711,7 +5711,7 @@ func (c *FilesWatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"fileId": c.fileId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.files.watch"), c.s.client, req)
 }
 
 // Download fetches the API endpoint's "media" value, instead of the normal
@@ -5924,7 +5924,7 @@ func (c *PermissionsCreateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"fileId": c.fileId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.permissions.create"), c.s.client, req)
 }
 
 // Do executes the "drive.permissions.create" call.
@@ -6098,7 +6098,7 @@ func (c *PermissionsDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"fileId":       c.fileId,
 		"permissionId": c.permissionId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.permissions.delete"), c.s.client, req)
 }
 
 // Do executes the "drive.permissions.delete" call.
@@ -6246,7 +6246,7 @@ func (c *PermissionsGetCall) doRequest(alt string) (*http.Response, error) {
 		"fileId":       c.fileId,
 		"permissionId": c.permissionId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.permissions.get"), c.s.client, req)
 }
 
 // Do executes the "drive.permissions.get" call.
@@ -6440,7 +6440,7 @@ func (c *PermissionsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"fileId": c.fileId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.permissions.list"), c.s.client, req)
 }
 
 // Do executes the "drive.permissions.list" call.
@@ -6656,7 +6656,7 @@ func (c *PermissionsUpdateCall) doRequest(alt string) (*http.Response, error) {
 		"fileId":       c.fileId,
 		"permissionId": c.permissionId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.permissions.update"), c.s.client, req)
 }
 
 // Do executes the "drive.permissions.update" call.
@@ -6824,7 +6824,7 @@ func (c *RepliesCreateCall) doRequest(alt string) (*http.Response, error) {
 		"fileId":    c.fileId,
 		"commentId": c.commentId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.replies.create"), c.s.client, req)
 }
 
 // Do executes the "drive.replies.create" call.
@@ -6964,7 +6964,7 @@ func (c *RepliesDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"commentId": c.commentId,
 		"replyId":   c.replyId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.replies.delete"), c.s.client, req)
 }
 
 // Do executes the "drive.replies.delete" call.
@@ -7102,7 +7102,7 @@ func (c *RepliesGetCall) doRequest(alt string) (*http.Response, error) {
 		"commentId": c.commentId,
 		"replyId":   c.replyId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.replies.get"), c.s.client, req)
 }
 
 // Do executes the "drive.replies.get" call.
@@ -7287,7 +7287,7 @@ func (c *RepliesListCall) doRequest(alt string) (*http.Response, error) {
 		"fileId":    c.fileId,
 		"commentId": c.commentId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.replies.list"), c.s.client, req)
 }
 
 // Do executes the "drive.replies.list" call.
@@ -7473,7 +7473,7 @@ func (c *RepliesUpdateCall) doRequest(alt string) (*http.Response, error) {
 		"commentId": c.commentId,
 		"replyId":   c.replyId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.replies.update"), c.s.client, req)
 }
 
 // Do executes the "drive.replies.update" call.
@@ -7618,7 +7618,7 @@ func (c *RevisionsDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"fileId":     c.fileId,
 		"revisionId": c.revisionId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.revisions.delete"), c.s.client, req)
 }
 
 // Do executes the "drive.revisions.delete" call.
@@ -7748,7 +7748,7 @@ func (c *RevisionsGetCall) doRequest(alt string) (*http.Response, error) {
 		"fileId":     c.fileId,
 		"revisionId": c.revisionId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.revisions.get"), c.s.client, req)
 }
 
 // Download fetches the API endpoint's "media" value, instead of the normal
@@ -7937,7 +7937,7 @@ func (c *RevisionsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"fileId": c.fileId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.revisions.list"), c.s.client, req)
 }
 
 // Do executes the "drive.revisions.list" call.
@@ -8111,7 +8111,7 @@ func (c *RevisionsUpdateCall) doRequest(alt string) (*http.Response, error) {
 		"fileId":     c.fileId,
 		"revisionId": c.revisionId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.revisions.update"), c.s.client, req)
 }
 
 // Do executes the "drive.revisions.update" call.
@@ -8249,7 +8249,7 @@ func (c *TeamdrivesCreateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.teamdrives.create"), c.s.client, req)
 }
 
 // Do executes the "drive.teamdrives.create" call.
@@ -8376,7 +8376,7 @@ func (c *TeamdrivesDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"teamDriveId": c.teamDriveId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.teamdrives.delete"), c.s.client, req)
 }
 
 // Do executes the "drive.teamdrives.delete" call.
@@ -8494,7 +8494,7 @@ func (c *TeamdrivesGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"teamDriveId": c.teamDriveId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.teamdrives.get"), c.s.client, req)
 }
 
 // Do executes the "drive.teamdrives.get" call.
@@ -8663,7 +8663,7 @@ func (c *TeamdrivesListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.teamdrives.list"), c.s.client, req)
 }
 
 // Do executes the "drive.teamdrives.list" call.
@@ -8840,7 +8840,7 @@ func (c *TeamdrivesUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"teamDriveId": c.teamDriveId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "drive.teamdrives.update"), c.s.client, req)
 }
 
 // Do executes the "drive.teamdrives.update" call.

@@ -356,7 +356,7 @@ func (c *WebResourceDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "siteVerification.webResource.delete"), c.s.client, req)
 }
 
 // Do executes the "siteVerification.webResource.delete" call.
@@ -465,7 +465,7 @@ func (c *WebResourceGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "siteVerification.webResource.get"), c.s.client, req)
 }
 
 // Do executes the "siteVerification.webResource.get" call.
@@ -592,7 +592,7 @@ func (c *WebResourceGetTokenCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "siteVerification.webResource.getToken"), c.s.client, req)
 }
 
 // Do executes the "siteVerification.webResource.getToken" call.
@@ -713,7 +713,7 @@ func (c *WebResourceInsertCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "siteVerification.webResource.insert"), c.s.client, req)
 }
 
 // Do executes the "siteVerification.webResource.insert" call.
@@ -850,7 +850,7 @@ func (c *WebResourceListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "siteVerification.webResource.list"), c.s.client, req)
 }
 
 // Do executes the "siteVerification.webResource.list" call.
@@ -971,7 +971,7 @@ func (c *WebResourcePatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "siteVerification.webResource.patch"), c.s.client, req)
 }
 
 // Do executes the "siteVerification.webResource.patch" call.
@@ -1105,7 +1105,7 @@ func (c *WebResourceUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "siteVerification.webResource.update"), c.s.client, req)
 }
 
 // Do executes the "siteVerification.webResource.update" call.

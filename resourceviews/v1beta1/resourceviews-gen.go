@@ -598,7 +598,7 @@ func (c *RegionViewsAddresourcesCall) doRequest(alt string) (*http.Response, err
 		"region":           c.region,
 		"resourceViewName": c.resourceViewName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.regionViews.addresources"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.regionViews.addresources" call.
@@ -718,7 +718,7 @@ func (c *RegionViewsDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"region":           c.region,
 		"resourceViewName": c.resourceViewName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.regionViews.delete"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.regionViews.delete" call.
@@ -849,7 +849,7 @@ func (c *RegionViewsGetCall) doRequest(alt string) (*http.Response, error) {
 		"region":           c.region,
 		"resourceViewName": c.resourceViewName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.regionViews.get"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.regionViews.get" call.
@@ -1001,7 +1001,7 @@ func (c *RegionViewsInsertCall) doRequest(alt string) (*http.Response, error) {
 		"projectName": c.projectName,
 		"region":      c.region,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.regionViews.insert"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.regionViews.insert" call.
@@ -1170,7 +1170,7 @@ func (c *RegionViewsListCall) doRequest(alt string) (*http.Response, error) {
 		"projectName": c.projectName,
 		"region":      c.region,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.regionViews.list"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.regionViews.list" call.
@@ -1363,7 +1363,7 @@ func (c *RegionViewsListresourcesCall) doRequest(alt string) (*http.Response, er
 		"region":           c.region,
 		"resourceViewName": c.resourceViewName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.regionViews.listresources"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.regionViews.listresources" call.
@@ -1553,7 +1553,7 @@ func (c *RegionViewsRemoveresourcesCall) doRequest(alt string) (*http.Response, 
 		"region":           c.region,
 		"resourceViewName": c.resourceViewName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.regionViews.removeresources"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.regionViews.removeresources" call.
@@ -1680,7 +1680,7 @@ func (c *ZoneViewsAddresourcesCall) doRequest(alt string) (*http.Response, error
 		"zone":             c.zone,
 		"resourceViewName": c.resourceViewName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.zoneViews.addresources"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.zoneViews.addresources" call.
@@ -1800,7 +1800,7 @@ func (c *ZoneViewsDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"zone":             c.zone,
 		"resourceViewName": c.resourceViewName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.zoneViews.delete"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.zoneViews.delete" call.
@@ -1931,7 +1931,7 @@ func (c *ZoneViewsGetCall) doRequest(alt string) (*http.Response, error) {
 		"zone":             c.zone,
 		"resourceViewName": c.resourceViewName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.zoneViews.get"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.zoneViews.get" call.
@@ -2083,7 +2083,7 @@ func (c *ZoneViewsInsertCall) doRequest(alt string) (*http.Response, error) {
 		"projectName": c.projectName,
 		"zone":        c.zone,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.zoneViews.insert"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.zoneViews.insert" call.
@@ -2252,7 +2252,7 @@ func (c *ZoneViewsListCall) doRequest(alt string) (*http.Response, error) {
 		"projectName": c.projectName,
 		"zone":        c.zone,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.zoneViews.list"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.zoneViews.list" call.
@@ -2445,7 +2445,7 @@ func (c *ZoneViewsListresourcesCall) doRequest(alt string) (*http.Response, erro
 		"zone":             c.zone,
 		"resourceViewName": c.resourceViewName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.zoneViews.listresources"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.zoneViews.listresources" call.
@@ -2635,7 +2635,7 @@ func (c *ZoneViewsRemoveresourcesCall) doRequest(alt string) (*http.Response, er
 		"zone":             c.zone,
 		"resourceViewName": c.resourceViewName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "resourceviews.zoneViews.removeresources"), c.s.client, req)
 }
 
 // Do executes the "resourceviews.zoneViews.removeresources" call.

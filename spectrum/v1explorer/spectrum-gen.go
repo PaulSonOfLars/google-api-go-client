@@ -2010,7 +2010,7 @@ func (c *PawsGetSpectrumCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "spectrum.paws.getSpectrum"), c.s.client, req)
 }
 
 // Do executes the "spectrum.paws.getSpectrum" call.
@@ -2125,7 +2125,7 @@ func (c *PawsGetSpectrumBatchCall) doRequest(alt string) (*http.Response, error)
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "spectrum.paws.getSpectrumBatch"), c.s.client, req)
 }
 
 // Do executes the "spectrum.paws.getSpectrumBatch" call.
@@ -2240,7 +2240,7 @@ func (c *PawsInitCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "spectrum.paws.init"), c.s.client, req)
 }
 
 // Do executes the "spectrum.paws.init" call.
@@ -2358,7 +2358,7 @@ func (c *PawsNotifySpectrumUseCall) doRequest(alt string) (*http.Response, error
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "spectrum.paws.notifySpectrumUse"), c.s.client, req)
 }
 
 // Do executes the "spectrum.paws.notifySpectrumUse" call.
@@ -2474,7 +2474,7 @@ func (c *PawsRegisterCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "spectrum.paws.register"), c.s.client, req)
 }
 
 // Do executes the "spectrum.paws.register" call.
@@ -2591,7 +2591,7 @@ func (c *PawsVerifyDeviceCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "spectrum.paws.verifyDevice"), c.s.client, req)
 }
 
 // Do executes the "spectrum.paws.verifyDevice" call.

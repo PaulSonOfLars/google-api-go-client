@@ -983,7 +983,7 @@ func (c *CseListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "search.cse.list"), c.s.client, req)
 }
 
 // Do executes the "search.cse.list" call.
@@ -1744,7 +1744,7 @@ func (c *CseSiterestrictListCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "search.cse.siterestrict.list"), c.s.client, req)
 }
 
 // Do executes the "search.cse.siterestrict.list" call.

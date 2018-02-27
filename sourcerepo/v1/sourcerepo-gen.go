@@ -942,7 +942,7 @@ func (c *ProjectsGetConfigCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sourcerepo.projects.getConfig"), c.s.client, req)
 }
 
 // Do executes the "sourcerepo.projects.getConfig" call.
@@ -1075,7 +1075,7 @@ func (c *ProjectsUpdateConfigCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sourcerepo.projects.updateConfig"), c.s.client, req)
 }
 
 // Do executes the "sourcerepo.projects.updateConfig" call.
@@ -1214,7 +1214,7 @@ func (c *ProjectsReposCreateCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sourcerepo.projects.repos.create"), c.s.client, req)
 }
 
 // Do executes the "sourcerepo.projects.repos.create" call.
@@ -1343,7 +1343,7 @@ func (c *ProjectsReposDeleteCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sourcerepo.projects.repos.delete"), c.s.client, req)
 }
 
 // Do executes the "sourcerepo.projects.repos.delete" call.
@@ -1483,7 +1483,7 @@ func (c *ProjectsReposGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sourcerepo.projects.repos.get"), c.s.client, req)
 }
 
 // Do executes the "sourcerepo.projects.repos.get" call.
@@ -1628,7 +1628,7 @@ func (c *ProjectsReposGetIamPolicyCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sourcerepo.projects.repos.getIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "sourcerepo.projects.repos.getIamPolicy" call.
@@ -1789,7 +1789,7 @@ func (c *ProjectsReposListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sourcerepo.projects.repos.list"), c.s.client, req)
 }
 
 // Do executes the "sourcerepo.projects.repos.list" call.
@@ -1956,7 +1956,7 @@ func (c *ProjectsReposPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sourcerepo.projects.repos.patch"), c.s.client, req)
 }
 
 // Do executes the "sourcerepo.projects.repos.patch" call.
@@ -2093,7 +2093,7 @@ func (c *ProjectsReposSetIamPolicyCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sourcerepo.projects.repos.setIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "sourcerepo.projects.repos.setIamPolicy" call.
@@ -2233,7 +2233,7 @@ func (c *ProjectsReposTestIamPermissionsCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sourcerepo.projects.repos.testIamPermissions"), c.s.client, req)
 }
 
 // Do executes the "sourcerepo.projects.repos.testIamPermissions" call.

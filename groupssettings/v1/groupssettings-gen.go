@@ -365,7 +365,7 @@ func (c *GroupsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"groupUniqueId": c.groupUniqueId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "groupsSettings.groups.get"), c.s.client, req)
 }
 
 // Do executes the "groupsSettings.groups.get" call.
@@ -496,7 +496,7 @@ func (c *GroupsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"groupUniqueId": c.groupUniqueId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "groupsSettings.groups.patch"), c.s.client, req)
 }
 
 // Do executes the "groupsSettings.groups.patch" call.
@@ -629,7 +629,7 @@ func (c *GroupsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"groupUniqueId": c.groupUniqueId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "groupsSettings.groups.update"), c.s.client, req)
 }
 
 // Do executes the "groupsSettings.groups.update" call.

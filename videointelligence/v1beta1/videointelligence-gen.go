@@ -2626,7 +2626,7 @@ func (c *VideosAnnotateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "videointelligence.videos.annotate"), c.s.client, req)
 }
 
 // Do executes the "videointelligence.videos.annotate" call.

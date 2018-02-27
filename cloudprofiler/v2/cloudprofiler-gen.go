@@ -384,7 +384,7 @@ func (c *ProjectsProfilesCreateCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudprofiler.projects.profiles.create"), c.s.client, req)
 }
 
 // Do executes the "cloudprofiler.projects.profiles.create" call.
@@ -525,7 +525,7 @@ func (c *ProjectsProfilesCreateOfflineCall) doRequest(alt string) (*http.Respons
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudprofiler.projects.profiles.createOffline"), c.s.client, req)
 }
 
 // Do executes the "cloudprofiler.projects.profiles.createOffline" call.
@@ -680,7 +680,7 @@ func (c *ProjectsProfilesPatchCall) doRequest(alt string) (*http.Response, error
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudprofiler.projects.profiles.patch"), c.s.client, req)
 }
 
 // Do executes the "cloudprofiler.projects.profiles.patch" call.

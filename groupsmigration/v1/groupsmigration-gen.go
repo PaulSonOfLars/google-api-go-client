@@ -227,7 +227,7 @@ func (c *ArchiveInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"groupId": c.groupId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "groupsmigration.archive.insert"), c.s.client, req)
 }
 
 // Do executes the "groupsmigration.archive.insert" call.

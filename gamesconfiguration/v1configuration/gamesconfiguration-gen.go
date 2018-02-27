@@ -671,7 +671,7 @@ func (c *AchievementConfigurationsDeleteCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"achievementId": c.achievementId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.achievementConfigurations.delete"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.achievementConfigurations.delete" call.
@@ -781,7 +781,7 @@ func (c *AchievementConfigurationsGetCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"achievementId": c.achievementId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.achievementConfigurations.get"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.achievementConfigurations.get" call.
@@ -911,7 +911,7 @@ func (c *AchievementConfigurationsInsertCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"applicationId": c.applicationId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.achievementConfigurations.insert"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.achievementConfigurations.insert" call.
@@ -1068,7 +1068,7 @@ func (c *AchievementConfigurationsListCall) doRequest(alt string) (*http.Respons
 	googleapi.Expand(req.URL, map[string]string{
 		"applicationId": c.applicationId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.achievementConfigurations.list"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.achievementConfigurations.list" call.
@@ -1234,7 +1234,7 @@ func (c *AchievementConfigurationsPatchCall) doRequest(alt string) (*http.Respon
 	googleapi.Expand(req.URL, map[string]string{
 		"achievementId": c.achievementId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.achievementConfigurations.patch"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.achievementConfigurations.patch" call.
@@ -1368,7 +1368,7 @@ func (c *AchievementConfigurationsUpdateCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"achievementId": c.achievementId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.achievementConfigurations.update"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.achievementConfigurations.update" call.
@@ -1549,7 +1549,7 @@ func (c *ImageConfigurationsUploadCall) doRequest(alt string) (*http.Response, e
 		"resourceId": c.resourceId,
 		"imageType":  c.imageType,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.imageConfigurations.upload"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.imageConfigurations.upload" call.
@@ -1721,7 +1721,7 @@ func (c *LeaderboardConfigurationsDeleteCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"leaderboardId": c.leaderboardId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.leaderboardConfigurations.delete"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.leaderboardConfigurations.delete" call.
@@ -1831,7 +1831,7 @@ func (c *LeaderboardConfigurationsGetCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"leaderboardId": c.leaderboardId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.leaderboardConfigurations.get"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.leaderboardConfigurations.get" call.
@@ -1961,7 +1961,7 @@ func (c *LeaderboardConfigurationsInsertCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"applicationId": c.applicationId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.leaderboardConfigurations.insert"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.leaderboardConfigurations.insert" call.
@@ -2118,7 +2118,7 @@ func (c *LeaderboardConfigurationsListCall) doRequest(alt string) (*http.Respons
 	googleapi.Expand(req.URL, map[string]string{
 		"applicationId": c.applicationId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.leaderboardConfigurations.list"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.leaderboardConfigurations.list" call.
@@ -2284,7 +2284,7 @@ func (c *LeaderboardConfigurationsPatchCall) doRequest(alt string) (*http.Respon
 	googleapi.Expand(req.URL, map[string]string{
 		"leaderboardId": c.leaderboardId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.leaderboardConfigurations.patch"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.leaderboardConfigurations.patch" call.
@@ -2418,7 +2418,7 @@ func (c *LeaderboardConfigurationsUpdateCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"leaderboardId": c.leaderboardId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesConfiguration.leaderboardConfigurations.update"), c.s.client, req)
 }
 
 // Do executes the "gamesConfiguration.leaderboardConfigurations.update" call.

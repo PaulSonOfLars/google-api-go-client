@@ -9612,7 +9612,7 @@ func (c *SpreadsheetsBatchUpdateCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"spreadsheetId": c.spreadsheetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.batchUpdate"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.batchUpdate" call.
@@ -9744,7 +9744,7 @@ func (c *SpreadsheetsCreateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.create"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.create" call.
@@ -9917,7 +9917,7 @@ func (c *SpreadsheetsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"spreadsheetId": c.spreadsheetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.get"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.get" call.
@@ -10090,7 +10090,7 @@ func (c *SpreadsheetsGetByDataFilterCall) doRequest(alt string) (*http.Response,
 	googleapi.Expand(req.URL, map[string]string{
 		"spreadsheetId": c.spreadsheetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.getByDataFilter"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.getByDataFilter" call.
@@ -10239,7 +10239,7 @@ func (c *SpreadsheetsDeveloperMetadataGetCall) doRequest(alt string) (*http.Resp
 		"spreadsheetId": c.spreadsheetId,
 		"metadataId":    strconv.FormatInt(c.metadataId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.developerMetadata.get"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.developerMetadata.get" call.
@@ -10389,7 +10389,7 @@ func (c *SpreadsheetsDeveloperMetadataSearchCall) doRequest(alt string) (*http.R
 	googleapi.Expand(req.URL, map[string]string{
 		"spreadsheetId": c.spreadsheetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.developerMetadata.search"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.developerMetadata.search" call.
@@ -10530,7 +10530,7 @@ func (c *SpreadsheetsSheetsCopyToCall) doRequest(alt string) (*http.Response, er
 		"spreadsheetId": c.spreadsheetId,
 		"sheetId":       strconv.FormatInt(c.sheetId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.sheets.copyTo"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.sheets.copyTo" call.
@@ -10761,7 +10761,7 @@ func (c *SpreadsheetsValuesAppendCall) doRequest(alt string) (*http.Response, er
 		"spreadsheetId": c.spreadsheetId,
 		"range":         c.range_,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.values.append"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.values.append" call.
@@ -10953,7 +10953,7 @@ func (c *SpreadsheetsValuesBatchClearCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"spreadsheetId": c.spreadsheetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.values.batchClear"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.values.batchClear" call.
@@ -11096,7 +11096,7 @@ func (c *SpreadsheetsValuesBatchClearByDataFilterCall) doRequest(alt string) (*h
 	googleapi.Expand(req.URL, map[string]string{
 		"spreadsheetId": c.spreadsheetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.values.batchClearByDataFilter"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.values.batchClearByDataFilter" call.
@@ -11298,7 +11298,7 @@ func (c *SpreadsheetsValuesBatchGetCall) doRequest(alt string) (*http.Response, 
 	googleapi.Expand(req.URL, map[string]string{
 		"spreadsheetId": c.spreadsheetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.values.batchGet"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.values.batchGet" call.
@@ -11473,7 +11473,7 @@ func (c *SpreadsheetsValuesBatchGetByDataFilterCall) doRequest(alt string) (*htt
 	googleapi.Expand(req.URL, map[string]string{
 		"spreadsheetId": c.spreadsheetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.values.batchGetByDataFilter"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.values.batchGetByDataFilter" call.
@@ -11613,7 +11613,7 @@ func (c *SpreadsheetsValuesBatchUpdateCall) doRequest(alt string) (*http.Respons
 	googleapi.Expand(req.URL, map[string]string{
 		"spreadsheetId": c.spreadsheetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.values.batchUpdate"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.values.batchUpdate" call.
@@ -11753,7 +11753,7 @@ func (c *SpreadsheetsValuesBatchUpdateByDataFilterCall) doRequest(alt string) (*
 	googleapi.Expand(req.URL, map[string]string{
 		"spreadsheetId": c.spreadsheetId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.values.batchUpdateByDataFilter"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.values.batchUpdateByDataFilter" call.
@@ -11897,7 +11897,7 @@ func (c *SpreadsheetsValuesClearCall) doRequest(alt string) (*http.Response, err
 		"spreadsheetId": c.spreadsheetId,
 		"range":         c.range_,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.values.clear"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.values.clear" call.
@@ -12100,7 +12100,7 @@ func (c *SpreadsheetsValuesGetCall) doRequest(alt string) (*http.Response, error
 		"spreadsheetId": c.spreadsheetId,
 		"range":         c.range_,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.values.get"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.values.get" call.
@@ -12335,7 +12335,7 @@ func (c *SpreadsheetsValuesUpdateCall) doRequest(alt string) (*http.Response, er
 		"spreadsheetId": c.spreadsheetId,
 		"range":         c.range_,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "sheets.spreadsheets.values.update"), c.s.client, req)
 }
 
 // Do executes the "sheets.spreadsheets.values.update" call.

@@ -1187,7 +1187,7 @@ func (c *AccountsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.get"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.get" call.
@@ -1336,7 +1336,7 @@ func (c *AdclientsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.adclients.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.adclients.list" call.
@@ -1502,7 +1502,7 @@ func (c *AdunitsGetCall) doRequest(alt string) (*http.Response, error) {
 		"adClientId": c.adClientId,
 		"adUnitId":   c.adUnitId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.adunits.get"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.adunits.get" call.
@@ -1671,7 +1671,7 @@ func (c *AdunitsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.adunits.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.adunits.list" call.
@@ -1869,7 +1869,7 @@ func (c *AdunitsCustomchannelsListCall) doRequest(alt string) (*http.Response, e
 		"adClientId": c.adClientId,
 		"adUnitId":   c.adUnitId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.adunits.customchannels.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.adunits.customchannels.list" call.
@@ -2052,7 +2052,7 @@ func (c *AlertsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.alerts.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.alerts.list" call.
@@ -2189,7 +2189,7 @@ func (c *CustomchannelsGetCall) doRequest(alt string) (*http.Response, error) {
 		"adClientId":      c.adClientId,
 		"customChannelId": c.customChannelId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.customchannels.get"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.customchannels.get" call.
@@ -2352,7 +2352,7 @@ func (c *CustomchannelsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.customchannels.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.customchannels.list" call.
@@ -2550,7 +2550,7 @@ func (c *CustomchannelsAdunitsListCall) doRequest(alt string) (*http.Response, e
 		"adClientId":      c.adClientId,
 		"customChannelId": c.customChannelId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.customchannels.adunits.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.customchannels.adunits.list" call.
@@ -2730,7 +2730,7 @@ func (c *MetadataDimensionsListCall) doRequest(alt string) (*http.Response, erro
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.metadata.dimensions.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.metadata.dimensions.list" call.
@@ -2853,7 +2853,7 @@ func (c *MetadataMetricsListCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.metadata.metrics.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.metadata.metrics.list" call.
@@ -2980,7 +2980,7 @@ func (c *PreferreddealsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"dealId": c.dealId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.preferreddeals.get"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.preferreddeals.get" call.
@@ -3113,7 +3113,7 @@ func (c *PreferreddealsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.preferreddeals.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.preferreddeals.list" call.
@@ -3291,7 +3291,7 @@ func (c *ReportsGenerateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.reports.generate"), c.s.client, req)
 }
 
 // Download fetches the API endpoint's "media" value, instead of the normal
@@ -3528,7 +3528,7 @@ func (c *ReportsSavedGenerateCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"savedReportId": c.savedReportId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.reports.saved.generate"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.reports.saved.generate" call.
@@ -3699,7 +3699,7 @@ func (c *ReportsSavedListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.reports.saved.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.reports.saved.list" call.
@@ -3879,7 +3879,7 @@ func (c *UrlchannelsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.urlchannels.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.urlchannels.list" call.

@@ -1375,7 +1375,7 @@ func (c *SpacesGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "chat.spaces.get"), c.s.client, req)
 }
 
 // Do executes the "chat.spaces.get" call.
@@ -1522,7 +1522,7 @@ func (c *SpacesListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "chat.spaces.list"), c.s.client, req)
 }
 
 // Do executes the "chat.spaces.list" call.
@@ -1681,7 +1681,7 @@ func (c *SpacesMembersGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "chat.spaces.members.get"), c.s.client, req)
 }
 
 // Do executes the "chat.spaces.members.get" call.
@@ -1833,7 +1833,7 @@ func (c *SpacesMembersListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "chat.spaces.members.list"), c.s.client, req)
 }
 
 // Do executes the "chat.spaces.members.list" call.
@@ -2013,7 +2013,7 @@ func (c *SpacesMessagesCreateCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "chat.spaces.messages.create"), c.s.client, req)
 }
 
 // Do executes the "chat.spaces.messages.create" call.
@@ -2143,7 +2143,7 @@ func (c *SpacesMessagesDeleteCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "chat.spaces.messages.delete"), c.s.client, req)
 }
 
 // Do executes the "chat.spaces.messages.delete" call.
@@ -2279,7 +2279,7 @@ func (c *SpacesMessagesGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "chat.spaces.messages.get"), c.s.client, req)
 }
 
 // Do executes the "chat.spaces.messages.get" call.
@@ -2417,7 +2417,7 @@ func (c *SpacesMessagesUpdateCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "chat.spaces.messages.update"), c.s.client, req)
 }
 
 // Do executes the "chat.spaces.messages.update" call.

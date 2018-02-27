@@ -939,7 +939,7 @@ func (c *ProjectsLocationsEnvironmentsCreateCall) doRequest(alt string) (*http.R
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "composer.projects.locations.environments.create"), c.s.client, req)
 }
 
 // Do executes the "composer.projects.locations.environments.create" call.
@@ -1067,7 +1067,7 @@ func (c *ProjectsLocationsEnvironmentsDeleteCall) doRequest(alt string) (*http.R
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "composer.projects.locations.environments.delete"), c.s.client, req)
 }
 
 // Do executes the "composer.projects.locations.environments.delete" call.
@@ -1206,7 +1206,7 @@ func (c *ProjectsLocationsEnvironmentsGetCall) doRequest(alt string) (*http.Resp
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "composer.projects.locations.environments.get"), c.s.client, req)
 }
 
 // Do executes the "composer.projects.locations.environments.get" call.
@@ -1359,7 +1359,7 @@ func (c *ProjectsLocationsEnvironmentsListCall) doRequest(alt string) (*http.Res
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "composer.projects.locations.environments.list"), c.s.client, req)
 }
 
 // Do executes the "composer.projects.locations.environments.list" call.
@@ -1690,7 +1690,7 @@ func (c *ProjectsLocationsEnvironmentsPatchCall) doRequest(alt string) (*http.Re
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "composer.projects.locations.environments.patch"), c.s.client, req)
 }
 
 // Do executes the "composer.projects.locations.environments.patch" call.
@@ -1830,7 +1830,7 @@ func (c *ProjectsLocationsOperationsDeleteCall) doRequest(alt string) (*http.Res
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "composer.projects.locations.operations.delete"), c.s.client, req)
 }
 
 // Do executes the "composer.projects.locations.operations.delete" call.
@@ -1973,7 +1973,7 @@ func (c *ProjectsLocationsOperationsGetCall) doRequest(alt string) (*http.Respon
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "composer.projects.locations.operations.get"), c.s.client, req)
 }
 
 // Do executes the "composer.projects.locations.operations.get" call.
@@ -2149,7 +2149,7 @@ func (c *ProjectsLocationsOperationsListCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "composer.projects.locations.operations.list"), c.s.client, req)
 }
 
 // Do executes the "composer.projects.locations.operations.list" call.

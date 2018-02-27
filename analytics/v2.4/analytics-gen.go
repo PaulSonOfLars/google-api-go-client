@@ -274,7 +274,7 @@ func (c *DataGetCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "analytics.data.get"), c.s.client, req)
 }
 
 // Do executes the "analytics.data.get" call.
@@ -455,7 +455,7 @@ func (c *ManagementAccountsListCall) doRequest(alt string) (*http.Response, erro
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "analytics.management.accounts.list"), c.s.client, req)
 }
 
 // Do executes the "analytics.management.accounts.list" call.
@@ -590,7 +590,7 @@ func (c *ManagementGoalsListCall) doRequest(alt string) (*http.Response, error) 
 		"webPropertyId": c.webPropertyId,
 		"profileId":     c.profileId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "analytics.management.goals.list"), c.s.client, req)
 }
 
 // Do executes the "analytics.management.goals.list" call.
@@ -745,7 +745,7 @@ func (c *ManagementProfilesListCall) doRequest(alt string) (*http.Response, erro
 		"accountId":     c.accountId,
 		"webPropertyId": c.webPropertyId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "analytics.management.profiles.list"), c.s.client, req)
 }
 
 // Do executes the "analytics.management.profiles.list" call.
@@ -885,7 +885,7 @@ func (c *ManagementSegmentsListCall) doRequest(alt string) (*http.Response, erro
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "analytics.management.segments.list"), c.s.client, req)
 }
 
 // Do executes the "analytics.management.segments.list" call.
@@ -1014,7 +1014,7 @@ func (c *ManagementWebpropertiesListCall) doRequest(alt string) (*http.Response,
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "analytics.management.webproperties.list"), c.s.client, req)
 }
 
 // Do executes the "analytics.management.webproperties.list" call.

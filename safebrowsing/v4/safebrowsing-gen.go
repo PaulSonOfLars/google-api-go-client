@@ -1559,7 +1559,7 @@ func (c *EncodedFullHashesGetCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"encodedRequest": c.encodedRequest,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "safebrowsing.encodedFullHashes.get"), c.s.client, req)
 }
 
 // Do executes the "safebrowsing.encodedFullHashes.get" call.
@@ -1720,7 +1720,7 @@ func (c *EncodedUpdatesGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"encodedRequest": c.encodedRequest,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "safebrowsing.encodedUpdates.get"), c.s.client, req)
 }
 
 // Do executes the "safebrowsing.encodedUpdates.get" call.
@@ -1854,7 +1854,7 @@ func (c *FullHashesFindCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "safebrowsing.fullHashes.find"), c.s.client, req)
 }
 
 // Do executes the "safebrowsing.fullHashes.find" call.
@@ -1973,7 +1973,7 @@ func (c *ThreatHitsCreateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "safebrowsing.threatHits.create"), c.s.client, req)
 }
 
 // Do executes the "safebrowsing.threatHits.create" call.
@@ -2092,7 +2092,7 @@ func (c *ThreatListUpdatesFetchCall) doRequest(alt string) (*http.Response, erro
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "safebrowsing.threatListUpdates.fetch"), c.s.client, req)
 }
 
 // Do executes the "safebrowsing.threatListUpdates.fetch" call.
@@ -2216,7 +2216,7 @@ func (c *ThreatListsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "safebrowsing.threatLists.list"), c.s.client, req)
 }
 
 // Do executes the "safebrowsing.threatLists.list" call.
@@ -2330,7 +2330,7 @@ func (c *ThreatMatchesFindCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "safebrowsing.threatMatches.find"), c.s.client, req)
 }
 
 // Do executes the "safebrowsing.threatMatches.find" call.

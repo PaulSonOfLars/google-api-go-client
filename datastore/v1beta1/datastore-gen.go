@@ -1077,7 +1077,7 @@ func (c *ProjectsExportCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"projectId": c.projectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "datastore.projects.export"), c.s.client, req)
 }
 
 // Do executes the "datastore.projects.export" call.
@@ -1221,7 +1221,7 @@ func (c *ProjectsImportCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"projectId": c.projectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "datastore.projects.import"), c.s.client, req)
 }
 
 // Do executes the "datastore.projects.import" call.

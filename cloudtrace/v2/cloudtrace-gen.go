@@ -1013,7 +1013,7 @@ func (c *ProjectsTracesBatchWriteCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudtrace.projects.traces.batchWrite"), c.s.client, req)
 }
 
 // Do executes the "cloudtrace.projects.traces.batchWrite" call.
@@ -1149,7 +1149,7 @@ func (c *ProjectsTracesSpansCreateSpanCall) doRequest(alt string) (*http.Respons
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.nameid,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudtrace.projects.traces.spans.createSpan"), c.s.client, req)
 }
 
 // Do executes the "cloudtrace.projects.traces.spans.createSpan" call.

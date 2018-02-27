@@ -1178,7 +1178,7 @@ func (c *ProjectsScanConfigsCreateCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.create"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.create" call.
@@ -1306,7 +1306,7 @@ func (c *ProjectsScanConfigsDeleteCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.delete"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.delete" call.
@@ -1445,7 +1445,7 @@ func (c *ProjectsScanConfigsGetCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.get"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.get" call.
@@ -1604,7 +1604,7 @@ func (c *ProjectsScanConfigsListCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.list"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.list" call.
@@ -1780,7 +1780,7 @@ func (c *ProjectsScanConfigsPatchCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.patch"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.patch" call.
@@ -1921,7 +1921,7 @@ func (c *ProjectsScanConfigsStartCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.start"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.start" call.
@@ -2063,7 +2063,7 @@ func (c *ProjectsScanConfigsScanRunsGetCall) doRequest(alt string) (*http.Respon
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.scanRuns.get"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.scanRuns.get" call.
@@ -2224,7 +2224,7 @@ func (c *ProjectsScanConfigsScanRunsListCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.scanRuns.list"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.scanRuns.list" call.
@@ -2388,7 +2388,7 @@ func (c *ProjectsScanConfigsScanRunsStopCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.scanRuns.stop"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.scanRuns.stop" call.
@@ -2550,7 +2550,7 @@ func (c *ProjectsScanConfigsScanRunsCrawledUrlsListCall) doRequest(alt string) (
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.scanRuns.crawledUrls.list"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.scanRuns.crawledUrls.list" call.
@@ -2721,7 +2721,7 @@ func (c *ProjectsScanConfigsScanRunsFindingTypeStatsListCall) doRequest(alt stri
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.scanRuns.findingTypeStats.list"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.scanRuns.findingTypeStats.list" call.
@@ -2860,7 +2860,7 @@ func (c *ProjectsScanConfigsScanRunsFindingsGetCall) doRequest(alt string) (*htt
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.scanRuns.findings.get"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.scanRuns.findings.get" call.
@@ -3029,7 +3029,7 @@ func (c *ProjectsScanConfigsScanRunsFindingsListCall) doRequest(alt string) (*ht
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "websecurityscanner.projects.scanConfigs.scanRuns.findings.list"), c.s.client, req)
 }
 
 // Do executes the "websecurityscanner.projects.scanConfigs.scanRuns.findings.list" call.

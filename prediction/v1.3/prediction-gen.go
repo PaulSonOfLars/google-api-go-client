@@ -493,7 +493,7 @@ func (c *HostedmodelsPredictCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"hostedModelName": c.hostedModelName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.hostedmodels.predict"), c.s.client, req)
 }
 
 // Do executes the "prediction.hostedmodels.predict" call.
@@ -619,7 +619,7 @@ func (c *TrainingDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"data": c.data,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.training.delete"), c.s.client, req)
 }
 
 // Do executes the "prediction.training.delete" call.
@@ -728,7 +728,7 @@ func (c *TrainingGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"data": c.data,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.training.get"), c.s.client, req)
 }
 
 // Do executes the "prediction.training.get" call.
@@ -853,7 +853,7 @@ func (c *TrainingInsertCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.training.insert"), c.s.client, req)
 }
 
 // Do executes the "prediction.training.insert" call.
@@ -978,7 +978,7 @@ func (c *TrainingPredictCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"data": c.data,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.training.predict"), c.s.client, req)
 }
 
 // Do executes the "prediction.training.predict" call.
@@ -1111,7 +1111,7 @@ func (c *TrainingUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"data": c.data,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.training.update"), c.s.client, req)
 }
 
 // Do executes the "prediction.training.update" call.

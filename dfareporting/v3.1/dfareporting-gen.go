@@ -14206,7 +14206,7 @@ func (c *AccountActiveAdSummariesGetCall) doRequest(alt string) (*http.Response,
 		"profileId":        strconv.FormatInt(c.profileId, 10),
 		"summaryAccountId": strconv.FormatInt(c.summaryAccountId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accountActiveAdSummaries.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accountActiveAdSummaries.get" call.
@@ -14355,7 +14355,7 @@ func (c *AccountPermissionGroupsGetCall) doRequest(alt string) (*http.Response, 
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accountPermissionGroups.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accountPermissionGroups.get" call.
@@ -14501,7 +14501,7 @@ func (c *AccountPermissionGroupsListCall) doRequest(alt string) (*http.Response,
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accountPermissionGroups.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accountPermissionGroups.list" call.
@@ -14643,7 +14643,7 @@ func (c *AccountPermissionsGetCall) doRequest(alt string) (*http.Response, error
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accountPermissions.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accountPermissions.get" call.
@@ -14789,7 +14789,7 @@ func (c *AccountPermissionsListCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accountPermissions.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accountPermissions.list" call.
@@ -14930,7 +14930,7 @@ func (c *AccountUserProfilesGetCall) doRequest(alt string) (*http.Response, erro
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accountUserProfiles.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accountUserProfiles.get" call.
@@ -15069,7 +15069,7 @@ func (c *AccountUserProfilesInsertCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accountUserProfiles.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accountUserProfiles.insert" call.
@@ -15293,7 +15293,7 @@ func (c *AccountUserProfilesListCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accountUserProfiles.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accountUserProfiles.list" call.
@@ -15518,7 +15518,7 @@ func (c *AccountUserProfilesPatchCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accountUserProfiles.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accountUserProfiles.patch" call.
@@ -15660,7 +15660,7 @@ func (c *AccountUserProfilesUpdateCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accountUserProfiles.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accountUserProfiles.update" call.
@@ -15804,7 +15804,7 @@ func (c *AccountsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accounts.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accounts.get" call.
@@ -16019,7 +16019,7 @@ func (c *AccountsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accounts.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accounts.list" call.
@@ -16232,7 +16232,7 @@ func (c *AccountsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accounts.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accounts.patch" call.
@@ -16374,7 +16374,7 @@ func (c *AccountsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.accounts.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.accounts.update" call.
@@ -16518,7 +16518,7 @@ func (c *AdsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.ads.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.ads.get" call.
@@ -16657,7 +16657,7 @@ func (c *AdsInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.ads.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.ads.insert" call.
@@ -17033,7 +17033,7 @@ func (c *AdsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.ads.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.ads.list" call.
@@ -17372,7 +17372,7 @@ func (c *AdsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.ads.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.ads.patch" call.
@@ -17514,7 +17514,7 @@ func (c *AdsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.ads.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.ads.update" call.
@@ -17644,7 +17644,7 @@ func (c *AdvertiserGroupsDeleteCall) doRequest(alt string) (*http.Response, erro
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertiserGroups.delete"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertiserGroups.delete" call.
@@ -17765,7 +17765,7 @@ func (c *AdvertiserGroupsGetCall) doRequest(alt string) (*http.Response, error) 
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertiserGroups.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertiserGroups.get" call.
@@ -17904,7 +17904,7 @@ func (c *AdvertiserGroupsInsertCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertiserGroups.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertiserGroups.insert" call.
@@ -18107,7 +18107,7 @@ func (c *AdvertiserGroupsListCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertiserGroups.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertiserGroups.list" call.
@@ -18315,7 +18315,7 @@ func (c *AdvertiserGroupsPatchCall) doRequest(alt string) (*http.Response, error
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertiserGroups.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertiserGroups.patch" call.
@@ -18457,7 +18457,7 @@ func (c *AdvertiserGroupsUpdateCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertiserGroups.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertiserGroups.update" call.
@@ -18601,7 +18601,7 @@ func (c *AdvertiserLandingPagesGetCall) doRequest(alt string) (*http.Response, e
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertiserLandingPages.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertiserLandingPages.get" call.
@@ -18740,7 +18740,7 @@ func (c *AdvertiserLandingPagesInsertCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertiserLandingPages.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertiserLandingPages.insert" call.
@@ -18967,7 +18967,7 @@ func (c *AdvertiserLandingPagesListCall) doRequest(alt string) (*http.Response, 
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertiserLandingPages.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertiserLandingPages.list" call.
@@ -19194,7 +19194,7 @@ func (c *AdvertiserLandingPagesPatchCall) doRequest(alt string) (*http.Response,
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertiserLandingPages.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertiserLandingPages.patch" call.
@@ -19336,7 +19336,7 @@ func (c *AdvertiserLandingPagesUpdateCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertiserLandingPages.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertiserLandingPages.update" call.
@@ -19480,7 +19480,7 @@ func (c *AdvertisersGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertisers.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertisers.get" call.
@@ -19619,7 +19619,7 @@ func (c *AdvertisersInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertisers.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertisers.insert" call.
@@ -19877,7 +19877,7 @@ func (c *AdvertisersListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertisers.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertisers.list" call.
@@ -20128,7 +20128,7 @@ func (c *AdvertisersPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertisers.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertisers.patch" call.
@@ -20270,7 +20270,7 @@ func (c *AdvertisersUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.advertisers.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.advertisers.update" call.
@@ -20411,7 +20411,7 @@ func (c *BrowsersListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.browsers.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.browsers.list" call.
@@ -20547,7 +20547,7 @@ func (c *CampaignCreativeAssociationsInsertCall) doRequest(alt string) (*http.Re
 		"profileId":  strconv.FormatInt(c.profileId, 10),
 		"campaignId": strconv.FormatInt(c.campaignId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.campaignCreativeAssociations.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.campaignCreativeAssociations.insert" call.
@@ -20725,7 +20725,7 @@ func (c *CampaignCreativeAssociationsListCall) doRequest(alt string) (*http.Resp
 		"profileId":  strconv.FormatInt(c.profileId, 10),
 		"campaignId": strconv.FormatInt(c.campaignId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.campaignCreativeAssociations.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.campaignCreativeAssociations.list" call.
@@ -20925,7 +20925,7 @@ func (c *CampaignsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.campaigns.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.campaigns.get" call.
@@ -21064,7 +21064,7 @@ func (c *CampaignsInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.campaigns.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.campaigns.insert" call.
@@ -21331,7 +21331,7 @@ func (c *CampaignsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.campaigns.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.campaigns.list" call.
@@ -21582,7 +21582,7 @@ func (c *CampaignsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.campaigns.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.campaigns.patch" call.
@@ -21724,7 +21724,7 @@ func (c *CampaignsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.campaigns.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.campaigns.update" call.
@@ -21868,7 +21868,7 @@ func (c *ChangeLogsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.changeLogs.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.changeLogs.get" call.
@@ -22169,7 +22169,7 @@ func (c *ChangeLogsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.changeLogs.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.changeLogs.list" call.
@@ -22548,7 +22548,7 @@ func (c *CitiesListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.cities.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.cities.list" call.
@@ -22715,7 +22715,7 @@ func (c *ConnectionTypesGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.connectionTypes.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.connectionTypes.get" call.
@@ -22861,7 +22861,7 @@ func (c *ConnectionTypesListCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.connectionTypes.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.connectionTypes.list" call.
@@ -22988,7 +22988,7 @@ func (c *ContentCategoriesDeleteCall) doRequest(alt string) (*http.Response, err
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.contentCategories.delete"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.contentCategories.delete" call.
@@ -23109,7 +23109,7 @@ func (c *ContentCategoriesGetCall) doRequest(alt string) (*http.Response, error)
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.contentCategories.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.contentCategories.get" call.
@@ -23248,7 +23248,7 @@ func (c *ContentCategoriesInsertCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.contentCategories.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.contentCategories.insert" call.
@@ -23451,7 +23451,7 @@ func (c *ContentCategoriesListCall) doRequest(alt string) (*http.Response, error
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.contentCategories.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.contentCategories.list" call.
@@ -23659,7 +23659,7 @@ func (c *ContentCategoriesPatchCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.contentCategories.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.contentCategories.patch" call.
@@ -23801,7 +23801,7 @@ func (c *ContentCategoriesUpdateCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.contentCategories.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.contentCategories.update" call.
@@ -23935,7 +23935,7 @@ func (c *ConversionsBatchinsertCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.conversions.batchinsert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.conversions.batchinsert" call.
@@ -24069,7 +24069,7 @@ func (c *ConversionsBatchupdateCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.conversions.batchupdate"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.conversions.batchupdate" call.
@@ -24213,7 +24213,7 @@ func (c *CountriesGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"dartId":    strconv.FormatInt(c.dartId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.countries.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.countries.get" call.
@@ -24359,7 +24359,7 @@ func (c *CountriesListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.countries.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.countries.list" call.
@@ -24544,7 +24544,7 @@ func (c *CreativeAssetsInsertCall) doRequest(alt string) (*http.Response, error)
 		"profileId":    strconv.FormatInt(c.profileId, 10),
 		"advertiserId": strconv.FormatInt(c.advertiserId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeAssets.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeAssets.insert" call.
@@ -24719,7 +24719,7 @@ func (c *CreativeFieldValuesDeleteCall) doRequest(alt string) (*http.Response, e
 		"creativeFieldId": strconv.FormatInt(c.creativeFieldId, 10),
 		"id":              strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeFieldValues.delete"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeFieldValues.delete" call.
@@ -24851,7 +24851,7 @@ func (c *CreativeFieldValuesGetCall) doRequest(alt string) (*http.Response, erro
 		"creativeFieldId": strconv.FormatInt(c.creativeFieldId, 10),
 		"id":              strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeFieldValues.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeFieldValues.get" call.
@@ -25001,7 +25001,7 @@ func (c *CreativeFieldValuesInsertCall) doRequest(alt string) (*http.Response, e
 		"profileId":       strconv.FormatInt(c.profileId, 10),
 		"creativeFieldId": strconv.FormatInt(c.creativeFieldId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeFieldValues.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeFieldValues.insert" call.
@@ -25209,7 +25209,7 @@ func (c *CreativeFieldValuesListCall) doRequest(alt string) (*http.Response, err
 		"profileId":       strconv.FormatInt(c.profileId, 10),
 		"creativeFieldId": strconv.FormatInt(c.creativeFieldId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeFieldValues.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeFieldValues.list" call.
@@ -25428,7 +25428,7 @@ func (c *CreativeFieldValuesPatchCall) doRequest(alt string) (*http.Response, er
 		"profileId":       strconv.FormatInt(c.profileId, 10),
 		"creativeFieldId": strconv.FormatInt(c.creativeFieldId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeFieldValues.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeFieldValues.patch" call.
@@ -25581,7 +25581,7 @@ func (c *CreativeFieldValuesUpdateCall) doRequest(alt string) (*http.Response, e
 		"profileId":       strconv.FormatInt(c.profileId, 10),
 		"creativeFieldId": strconv.FormatInt(c.creativeFieldId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeFieldValues.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeFieldValues.update" call.
@@ -25719,7 +25719,7 @@ func (c *CreativeFieldsDeleteCall) doRequest(alt string) (*http.Response, error)
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeFields.delete"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeFields.delete" call.
@@ -25840,7 +25840,7 @@ func (c *CreativeFieldsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeFields.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeFields.get" call.
@@ -25979,7 +25979,7 @@ func (c *CreativeFieldsInsertCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeFields.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeFields.insert" call.
@@ -26193,7 +26193,7 @@ func (c *CreativeFieldsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeFields.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeFields.list" call.
@@ -26408,7 +26408,7 @@ func (c *CreativeFieldsPatchCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeFields.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeFields.patch" call.
@@ -26550,7 +26550,7 @@ func (c *CreativeFieldsUpdateCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeFields.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeFields.update" call.
@@ -26694,7 +26694,7 @@ func (c *CreativeGroupsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeGroups.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeGroups.get" call.
@@ -26833,7 +26833,7 @@ func (c *CreativeGroupsInsertCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeGroups.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeGroups.insert" call.
@@ -27054,7 +27054,7 @@ func (c *CreativeGroupsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeGroups.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeGroups.list" call.
@@ -27277,7 +27277,7 @@ func (c *CreativeGroupsPatchCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeGroups.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeGroups.patch" call.
@@ -27419,7 +27419,7 @@ func (c *CreativeGroupsUpdateCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creativeGroups.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creativeGroups.update" call.
@@ -27563,7 +27563,7 @@ func (c *CreativesGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creatives.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creatives.get" call.
@@ -27702,7 +27702,7 @@ func (c *CreativesInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creatives.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creatives.insert" call.
@@ -28018,7 +28018,7 @@ func (c *CreativesListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creatives.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creatives.list" call.
@@ -28342,7 +28342,7 @@ func (c *CreativesPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creatives.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creatives.patch" call.
@@ -28484,7 +28484,7 @@ func (c *CreativesUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.creatives.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.creatives.update" call.
@@ -28633,7 +28633,7 @@ func (c *DimensionValuesQueryCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.dimensionValues.query"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.dimensionValues.query" call.
@@ -28812,7 +28812,7 @@ func (c *DirectorySiteContactsGetCall) doRequest(alt string) (*http.Response, er
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.directorySiteContacts.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.directorySiteContacts.get" call.
@@ -29033,7 +29033,7 @@ func (c *DirectorySiteContactsListCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.directorySiteContacts.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.directorySiteContacts.list" call.
@@ -29257,7 +29257,7 @@ func (c *DirectorySitesGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.directorySites.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.directorySites.get" call.
@@ -29396,7 +29396,7 @@ func (c *DirectorySitesInsertCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.directorySites.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.directorySites.insert" call.
@@ -29652,7 +29652,7 @@ func (c *DirectorySitesListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.directorySites.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.directorySites.list" call.
@@ -29893,7 +29893,7 @@ func (c *DynamicTargetingKeysDeleteCall) doRequest(alt string) (*http.Response, 
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"objectId":  strconv.FormatInt(c.objectId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.dynamicTargetingKeys.delete"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.dynamicTargetingKeys.delete" call.
@@ -30034,7 +30034,7 @@ func (c *DynamicTargetingKeysInsertCall) doRequest(alt string) (*http.Response, 
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.dynamicTargetingKeys.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.dynamicTargetingKeys.insert" call.
@@ -30209,7 +30209,7 @@ func (c *DynamicTargetingKeysListCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.dynamicTargetingKeys.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.dynamicTargetingKeys.list" call.
@@ -30371,7 +30371,7 @@ func (c *EventTagsDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.eventTags.delete"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.eventTags.delete" call.
@@ -30492,7 +30492,7 @@ func (c *EventTagsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.eventTags.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.eventTags.get" call.
@@ -30631,7 +30631,7 @@ func (c *EventTagsInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.eventTags.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.eventTags.insert" call.
@@ -30880,7 +30880,7 @@ func (c *EventTagsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.eventTags.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.eventTags.list" call.
@@ -31097,7 +31097,7 @@ func (c *EventTagsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.eventTags.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.eventTags.patch" call.
@@ -31239,7 +31239,7 @@ func (c *EventTagsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.eventTags.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.eventTags.update" call.
@@ -31384,7 +31384,7 @@ func (c *FilesGetCall) doRequest(alt string) (*http.Response, error) {
 		"reportId": strconv.FormatInt(c.reportId, 10),
 		"fileId":   strconv.FormatInt(c.fileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.files.get"), c.s.client, req)
 }
 
 // Download fetches the API endpoint's "media" value, instead of the normal
@@ -31595,7 +31595,7 @@ func (c *FilesListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.files.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.files.list" call.
@@ -31801,7 +31801,7 @@ func (c *FloodlightActivitiesDeleteCall) doRequest(alt string) (*http.Response, 
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightActivities.delete"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightActivities.delete" call.
@@ -31913,7 +31913,7 @@ func (c *FloodlightActivitiesGeneratetagCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightActivities.generatetag"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightActivities.generatetag" call.
@@ -32061,7 +32061,7 @@ func (c *FloodlightActivitiesGetCall) doRequest(alt string) (*http.Response, err
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightActivities.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightActivities.get" call.
@@ -32200,7 +32200,7 @@ func (c *FloodlightActivitiesInsertCall) doRequest(alt string) (*http.Response, 
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightActivities.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightActivities.insert" call.
@@ -32469,7 +32469,7 @@ func (c *FloodlightActivitiesListCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightActivities.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightActivities.list" call.
@@ -32724,7 +32724,7 @@ func (c *FloodlightActivitiesPatchCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightActivities.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightActivities.patch" call.
@@ -32866,7 +32866,7 @@ func (c *FloodlightActivitiesUpdateCall) doRequest(alt string) (*http.Response, 
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightActivities.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightActivities.update" call.
@@ -33010,7 +33010,7 @@ func (c *FloodlightActivityGroupsGetCall) doRequest(alt string) (*http.Response,
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightActivityGroups.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightActivityGroups.get" call.
@@ -33149,7 +33149,7 @@ func (c *FloodlightActivityGroupsInsertCall) doRequest(alt string) (*http.Respon
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightActivityGroups.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightActivityGroups.insert" call.
@@ -33383,7 +33383,7 @@ func (c *FloodlightActivityGroupsListCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightActivityGroups.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightActivityGroups.list" call.
@@ -33617,7 +33617,7 @@ func (c *FloodlightActivityGroupsPatchCall) doRequest(alt string) (*http.Respons
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightActivityGroups.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightActivityGroups.patch" call.
@@ -33759,7 +33759,7 @@ func (c *FloodlightActivityGroupsUpdateCall) doRequest(alt string) (*http.Respon
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightActivityGroups.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightActivityGroups.update" call.
@@ -33903,7 +33903,7 @@ func (c *FloodlightConfigurationsGetCall) doRequest(alt string) (*http.Response,
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightConfigurations.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightConfigurations.get" call.
@@ -34062,7 +34062,7 @@ func (c *FloodlightConfigurationsListCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightConfigurations.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightConfigurations.list" call.
@@ -34203,7 +34203,7 @@ func (c *FloodlightConfigurationsPatchCall) doRequest(alt string) (*http.Respons
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightConfigurations.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightConfigurations.patch" call.
@@ -34345,7 +34345,7 @@ func (c *FloodlightConfigurationsUpdateCall) doRequest(alt string) (*http.Respon
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.floodlightConfigurations.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.floodlightConfigurations.update" call.
@@ -34492,7 +34492,7 @@ func (c *InventoryItemsGetCall) doRequest(alt string) (*http.Response, error) {
 		"projectId": strconv.FormatInt(c.projectId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.inventoryItems.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.inventoryItems.get" call.
@@ -34737,7 +34737,7 @@ func (c *InventoryItemsListCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"projectId": strconv.FormatInt(c.projectId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.inventoryItems.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.inventoryItems.list" call.
@@ -34985,7 +34985,7 @@ func (c *LanguagesListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.languages.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.languages.list" call.
@@ -35123,7 +35123,7 @@ func (c *MetrosListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.metros.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.metros.list" call.
@@ -35264,7 +35264,7 @@ func (c *MobileAppsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.mobileApps.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.mobileApps.get" call.
@@ -35454,7 +35454,7 @@ func (c *MobileAppsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.mobileApps.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.mobileApps.list" call.
@@ -35657,7 +35657,7 @@ func (c *MobileCarriersGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.mobileCarriers.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.mobileCarriers.get" call.
@@ -35803,7 +35803,7 @@ func (c *MobileCarriersListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.mobileCarriers.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.mobileCarriers.list" call.
@@ -35944,7 +35944,7 @@ func (c *OperatingSystemVersionsGetCall) doRequest(alt string) (*http.Response, 
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.operatingSystemVersions.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.operatingSystemVersions.get" call.
@@ -36090,7 +36090,7 @@ func (c *OperatingSystemVersionsListCall) doRequest(alt string) (*http.Response,
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.operatingSystemVersions.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.operatingSystemVersions.list" call.
@@ -36232,7 +36232,7 @@ func (c *OperatingSystemsGetCall) doRequest(alt string) (*http.Response, error) 
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"dartId":    strconv.FormatInt(c.dartId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.operatingSystems.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.operatingSystems.get" call.
@@ -36378,7 +36378,7 @@ func (c *OperatingSystemsListCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.operatingSystems.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.operatingSystems.list" call.
@@ -36522,7 +36522,7 @@ func (c *OrderDocumentsGetCall) doRequest(alt string) (*http.Response, error) {
 		"projectId": strconv.FormatInt(c.projectId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.orderDocuments.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.orderDocuments.get" call.
@@ -36770,7 +36770,7 @@ func (c *OrderDocumentsListCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"projectId": strconv.FormatInt(c.projectId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.orderDocuments.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.orderDocuments.list" call.
@@ -37016,7 +37016,7 @@ func (c *OrdersGetCall) doRequest(alt string) (*http.Response, error) {
 		"projectId": strconv.FormatInt(c.projectId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.orders.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.orders.get" call.
@@ -37244,7 +37244,7 @@ func (c *OrdersListCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"projectId": strconv.FormatInt(c.projectId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.orders.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.orders.list" call.
@@ -37475,7 +37475,7 @@ func (c *PlacementGroupsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placementGroups.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placementGroups.get" call.
@@ -37614,7 +37614,7 @@ func (c *PlacementGroupsInsertCall) doRequest(alt string) (*http.Response, error
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placementGroups.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placementGroups.insert" call.
@@ -37957,7 +37957,7 @@ func (c *PlacementGroupsListCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placementGroups.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placementGroups.list" call.
@@ -38267,7 +38267,7 @@ func (c *PlacementGroupsPatchCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placementGroups.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placementGroups.patch" call.
@@ -38409,7 +38409,7 @@ func (c *PlacementGroupsUpdateCall) doRequest(alt string) (*http.Response, error
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placementGroups.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placementGroups.update" call.
@@ -38539,7 +38539,7 @@ func (c *PlacementStrategiesDeleteCall) doRequest(alt string) (*http.Response, e
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placementStrategies.delete"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placementStrategies.delete" call.
@@ -38660,7 +38660,7 @@ func (c *PlacementStrategiesGetCall) doRequest(alt string) (*http.Response, erro
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placementStrategies.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placementStrategies.get" call.
@@ -38799,7 +38799,7 @@ func (c *PlacementStrategiesInsertCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placementStrategies.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placementStrategies.insert" call.
@@ -39002,7 +39002,7 @@ func (c *PlacementStrategiesListCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placementStrategies.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placementStrategies.list" call.
@@ -39210,7 +39210,7 @@ func (c *PlacementStrategiesPatchCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placementStrategies.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placementStrategies.patch" call.
@@ -39352,7 +39352,7 @@ func (c *PlacementStrategiesUpdateCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placementStrategies.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placementStrategies.update" call.
@@ -39528,7 +39528,7 @@ func (c *PlacementsGeneratetagsCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placements.generatetags"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placements.generatetags" call.
@@ -39730,7 +39730,7 @@ func (c *PlacementsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placements.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placements.get" call.
@@ -39869,7 +39869,7 @@ func (c *PlacementsInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placements.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placements.insert" call.
@@ -40248,7 +40248,7 @@ func (c *PlacementsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placements.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placements.list" call.
@@ -40594,7 +40594,7 @@ func (c *PlacementsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placements.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placements.patch" call.
@@ -40736,7 +40736,7 @@ func (c *PlacementsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.placements.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.placements.update" call.
@@ -40880,7 +40880,7 @@ func (c *PlatformTypesGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.platformTypes.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.platformTypes.get" call.
@@ -41026,7 +41026,7 @@ func (c *PlatformTypesListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.platformTypes.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.platformTypes.list" call.
@@ -41167,7 +41167,7 @@ func (c *PostalCodesGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"code":      c.code,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.postalCodes.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.postalCodes.get" call.
@@ -41312,7 +41312,7 @@ func (c *PostalCodesListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.postalCodes.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.postalCodes.list" call.
@@ -41453,7 +41453,7 @@ func (c *ProjectsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.projects.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.projects.get" call.
@@ -41671,7 +41671,7 @@ func (c *ProjectsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.projects.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.projects.list" call.
@@ -41891,7 +41891,7 @@ func (c *RegionsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.regions.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.regions.list" call.
@@ -42032,7 +42032,7 @@ func (c *RemarketingListSharesGetCall) doRequest(alt string) (*http.Response, er
 		"profileId":         strconv.FormatInt(c.profileId, 10),
 		"remarketingListId": strconv.FormatInt(c.remarketingListId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.remarketingListShares.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.remarketingListShares.get" call.
@@ -42173,7 +42173,7 @@ func (c *RemarketingListSharesPatchCall) doRequest(alt string) (*http.Response, 
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.remarketingListShares.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.remarketingListShares.patch" call.
@@ -42315,7 +42315,7 @@ func (c *RemarketingListSharesUpdateCall) doRequest(alt string) (*http.Response,
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.remarketingListShares.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.remarketingListShares.update" call.
@@ -42459,7 +42459,7 @@ func (c *RemarketingListsGetCall) doRequest(alt string) (*http.Response, error) 
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.remarketingLists.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.remarketingLists.get" call.
@@ -42598,7 +42598,7 @@ func (c *RemarketingListsInsertCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.remarketingLists.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.remarketingLists.insert" call.
@@ -42805,7 +42805,7 @@ func (c *RemarketingListsListCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.remarketingLists.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.remarketingLists.list" call.
@@ -43025,7 +43025,7 @@ func (c *RemarketingListsPatchCall) doRequest(alt string) (*http.Response, error
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.remarketingLists.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.remarketingLists.patch" call.
@@ -43167,7 +43167,7 @@ func (c *RemarketingListsUpdateCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.remarketingLists.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.remarketingLists.update" call.
@@ -43297,7 +43297,7 @@ func (c *ReportsDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"reportId":  strconv.FormatInt(c.reportId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.reports.delete"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.reports.delete" call.
@@ -43418,7 +43418,7 @@ func (c *ReportsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"reportId":  strconv.FormatInt(c.reportId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.reports.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.reports.get" call.
@@ -43557,7 +43557,7 @@ func (c *ReportsInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.reports.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.reports.insert" call.
@@ -43746,7 +43746,7 @@ func (c *ReportsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.reports.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.reports.list" call.
@@ -43959,7 +43959,7 @@ func (c *ReportsPatchCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"reportId":  strconv.FormatInt(c.reportId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.reports.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.reports.patch" call.
@@ -44104,7 +44104,7 @@ func (c *ReportsRunCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"reportId":  strconv.FormatInt(c.reportId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.reports.run"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.reports.run" call.
@@ -44252,7 +44252,7 @@ func (c *ReportsUpdateCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"reportId":  strconv.FormatInt(c.reportId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.reports.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.reports.update" call.
@@ -44396,7 +44396,7 @@ func (c *ReportsCompatibleFieldsQueryCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.reports.compatibleFields.query"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.reports.compatibleFields.query" call.
@@ -44543,7 +44543,7 @@ func (c *ReportsFilesGetCall) doRequest(alt string) (*http.Response, error) {
 		"reportId":  strconv.FormatInt(c.reportId, 10),
 		"fileId":    strconv.FormatInt(c.fileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.reports.files.get"), c.s.client, req)
 }
 
 // Download fetches the API endpoint's "media" value, instead of the normal
@@ -44753,7 +44753,7 @@ func (c *ReportsFilesListCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"reportId":  strconv.FormatInt(c.reportId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.reports.files.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.reports.files.list" call.
@@ -44965,7 +44965,7 @@ func (c *SitesGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.sites.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.sites.get" call.
@@ -45104,7 +45104,7 @@ func (c *SitesInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.sites.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.sites.insert" call.
@@ -45379,7 +45379,7 @@ func (c *SitesListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.sites.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.sites.list" call.
@@ -45637,7 +45637,7 @@ func (c *SitesPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.sites.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.sites.patch" call.
@@ -45779,7 +45779,7 @@ func (c *SitesUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.sites.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.sites.update" call.
@@ -45923,7 +45923,7 @@ func (c *SizesGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.sizes.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.sizes.get" call.
@@ -46062,7 +46062,7 @@ func (c *SizesInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.sizes.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.sizes.insert" call.
@@ -46238,7 +46238,7 @@ func (c *SizesListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.sizes.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.sizes.list" call.
@@ -46407,7 +46407,7 @@ func (c *SubaccountsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.subaccounts.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.subaccounts.get" call.
@@ -46546,7 +46546,7 @@ func (c *SubaccountsInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.subaccounts.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.subaccounts.insert" call.
@@ -46748,7 +46748,7 @@ func (c *SubaccountsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.subaccounts.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.subaccounts.list" call.
@@ -46956,7 +46956,7 @@ func (c *SubaccountsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.subaccounts.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.subaccounts.patch" call.
@@ -47098,7 +47098,7 @@ func (c *SubaccountsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.subaccounts.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.subaccounts.update" call.
@@ -47242,7 +47242,7 @@ func (c *TargetableRemarketingListsGetCall) doRequest(alt string) (*http.Respons
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.targetableRemarketingLists.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.targetableRemarketingLists.get" call.
@@ -47446,7 +47446,7 @@ func (c *TargetableRemarketingListsListCall) doRequest(alt string) (*http.Respon
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.targetableRemarketingLists.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.targetableRemarketingLists.list" call.
@@ -47669,7 +47669,7 @@ func (c *TargetingTemplatesGetCall) doRequest(alt string) (*http.Response, error
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.targetingTemplates.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.targetingTemplates.get" call.
@@ -47808,7 +47808,7 @@ func (c *TargetingTemplatesInsertCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.targetingTemplates.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.targetingTemplates.insert" call.
@@ -48017,7 +48017,7 @@ func (c *TargetingTemplatesListCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.targetingTemplates.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.targetingTemplates.list" call.
@@ -48231,7 +48231,7 @@ func (c *TargetingTemplatesPatchCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.targetingTemplates.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.targetingTemplates.patch" call.
@@ -48373,7 +48373,7 @@ func (c *TargetingTemplatesUpdateCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.targetingTemplates.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.targetingTemplates.update" call.
@@ -48514,7 +48514,7 @@ func (c *UserProfilesGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.userProfiles.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.userProfiles.get" call.
@@ -48648,7 +48648,7 @@ func (c *UserProfilesListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.userProfiles.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.userProfiles.list" call.
@@ -48778,7 +48778,7 @@ func (c *UserRolePermissionGroupsGetCall) doRequest(alt string) (*http.Response,
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.userRolePermissionGroups.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.userRolePermissionGroups.get" call.
@@ -48924,7 +48924,7 @@ func (c *UserRolePermissionGroupsListCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.userRolePermissionGroups.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.userRolePermissionGroups.list" call.
@@ -49066,7 +49066,7 @@ func (c *UserRolePermissionsGetCall) doRequest(alt string) (*http.Response, erro
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.userRolePermissions.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.userRolePermissions.get" call.
@@ -49223,7 +49223,7 @@ func (c *UserRolePermissionsListCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.userRolePermissions.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.userRolePermissions.list" call.
@@ -49357,7 +49357,7 @@ func (c *UserRolesDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.userRoles.delete"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.userRoles.delete" call.
@@ -49478,7 +49478,7 @@ func (c *UserRolesGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.userRoles.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.userRoles.get" call.
@@ -49617,7 +49617,7 @@ func (c *UserRolesInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.userRoles.insert"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.userRoles.insert" call.
@@ -49834,7 +49834,7 @@ func (c *UserRolesListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.userRoles.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.userRoles.list" call.
@@ -50053,7 +50053,7 @@ func (c *UserRolesPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.userRoles.patch"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.userRoles.patch" call.
@@ -50195,7 +50195,7 @@ func (c *UserRolesUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.userRoles.update"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.userRoles.update" call.
@@ -50339,7 +50339,7 @@ func (c *VideoFormatsGetCall) doRequest(alt string) (*http.Response, error) {
 		"profileId": strconv.FormatInt(c.profileId, 10),
 		"id":        strconv.FormatInt(c.id, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.videoFormats.get"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.videoFormats.get" call.
@@ -50485,7 +50485,7 @@ func (c *VideoFormatsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"profileId": strconv.FormatInt(c.profileId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "dfareporting.videoFormats.list"), c.s.client, req)
 }
 
 // Do executes the "dfareporting.videoFormats.list" call.

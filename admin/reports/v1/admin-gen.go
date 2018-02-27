@@ -805,7 +805,7 @@ func (c *ActivitiesListCall) doRequest(alt string) (*http.Response, error) {
 		"userKey":         c.userKey,
 		"applicationName": c.applicationName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "reports.activities.list"), c.s.client, req)
 }
 
 // Do executes the "reports.activities.list" call.
@@ -1073,7 +1073,7 @@ func (c *ActivitiesWatchCall) doRequest(alt string) (*http.Response, error) {
 		"userKey":         c.userKey,
 		"applicationName": c.applicationName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "reports.activities.watch"), c.s.client, req)
 }
 
 // Do executes the "reports.activities.watch" call.
@@ -1258,7 +1258,7 @@ func (c *ChannelsStopCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "admin.channels.stop"), c.s.client, req)
 }
 
 // Do executes the "admin.channels.stop" call.
@@ -1383,7 +1383,7 @@ func (c *CustomerUsageReportsGetCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"date": c.date,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "reports.customerUsageReports.get"), c.s.client, req)
 }
 
 // Do executes the "reports.customerUsageReports.get" call.
@@ -1602,7 +1602,7 @@ func (c *EntityUsageReportsGetCall) doRequest(alt string) (*http.Response, error
 		"entityKey":  c.entityKey,
 		"date":       c.date,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "reports.entityUsageReports.get"), c.s.client, req)
 }
 
 // Do executes the "reports.entityUsageReports.get" call.
@@ -1846,7 +1846,7 @@ func (c *UserUsageReportGetCall) doRequest(alt string) (*http.Response, error) {
 		"userKey": c.userKey,
 		"date":    c.date,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "reports.userUsageReport.get"), c.s.client, req)
 }
 
 // Do executes the "reports.userUsageReport.get" call.

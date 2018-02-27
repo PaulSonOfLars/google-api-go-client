@@ -963,7 +963,7 @@ func (c *HostedmodelsPredictCall) doRequest(alt string) (*http.Response, error) 
 		"project":         c.project,
 		"hostedModelName": c.hostedModelName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.hostedmodels.predict"), c.s.client, req)
 }
 
 // Do executes the "prediction.hostedmodels.predict" call.
@@ -1115,7 +1115,7 @@ func (c *TrainedmodelsAnalyzeCall) doRequest(alt string) (*http.Response, error)
 		"project": c.project,
 		"id":      c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.trainedmodels.analyze"), c.s.client, req)
 }
 
 // Do executes the "prediction.trainedmodels.analyze" call.
@@ -1249,7 +1249,7 @@ func (c *TrainedmodelsDeleteCall) doRequest(alt string) (*http.Response, error) 
 		"project": c.project,
 		"id":      c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.trainedmodels.delete"), c.s.client, req)
 }
 
 // Do executes the "prediction.trainedmodels.delete" call.
@@ -1369,7 +1369,7 @@ func (c *TrainedmodelsGetCall) doRequest(alt string) (*http.Response, error) {
 		"project": c.project,
 		"id":      c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.trainedmodels.get"), c.s.client, req)
 }
 
 // Do executes the "prediction.trainedmodels.get" call.
@@ -1507,7 +1507,7 @@ func (c *TrainedmodelsInsertCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"project": c.project,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.trainedmodels.insert"), c.s.client, req)
 }
 
 // Do executes the "prediction.trainedmodels.insert" call.
@@ -1664,7 +1664,7 @@ func (c *TrainedmodelsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"project": c.project,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.trainedmodels.list"), c.s.client, req)
 }
 
 // Do executes the "prediction.trainedmodels.list" call.
@@ -1831,7 +1831,7 @@ func (c *TrainedmodelsPredictCall) doRequest(alt string) (*http.Response, error)
 		"project": c.project,
 		"id":      c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.trainedmodels.predict"), c.s.client, req)
 }
 
 // Do executes the "prediction.trainedmodels.predict" call.
@@ -1975,7 +1975,7 @@ func (c *TrainedmodelsUpdateCall) doRequest(alt string) (*http.Response, error) 
 		"project": c.project,
 		"id":      c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "prediction.trainedmodels.update"), c.s.client, req)
 }
 
 // Do executes the "prediction.trainedmodels.update" call.

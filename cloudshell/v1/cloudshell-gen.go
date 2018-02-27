@@ -645,7 +645,7 @@ func (c *OperationsCancelCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudshell.operations.cancel"), c.s.client, req)
 }
 
 // Do executes the "cloudshell.operations.cancel" call.
@@ -779,7 +779,7 @@ func (c *OperationsDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudshell.operations.delete"), c.s.client, req)
 }
 
 // Do executes the "cloudshell.operations.delete" call.
@@ -922,7 +922,7 @@ func (c *OperationsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudshell.operations.get"), c.s.client, req)
 }
 
 // Do executes the "cloudshell.operations.get" call.
@@ -1098,7 +1098,7 @@ func (c *OperationsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudshell.operations.list"), c.s.client, req)
 }
 
 // Do executes the "cloudshell.operations.list" call.

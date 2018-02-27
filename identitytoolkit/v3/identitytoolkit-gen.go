@@ -2413,7 +2413,7 @@ func (c *RelyingpartyCreateAuthUriCall) doRequest(alt string) (*http.Response, e
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.createAuthUri"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.createAuthUri" call.
@@ -2530,7 +2530,7 @@ func (c *RelyingpartyDeleteAccountCall) doRequest(alt string) (*http.Response, e
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.deleteAccount"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.deleteAccount" call.
@@ -2647,7 +2647,7 @@ func (c *RelyingpartyDownloadAccountCall) doRequest(alt string) (*http.Response,
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.downloadAccount"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.downloadAccount" call.
@@ -2786,7 +2786,7 @@ func (c *RelyingpartyEmailLinkSigninCall) doRequest(alt string) (*http.Response,
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.emailLinkSignin"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.emailLinkSignin" call.
@@ -2903,7 +2903,7 @@ func (c *RelyingpartyGetAccountInfoCall) doRequest(alt string) (*http.Response, 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.getAccountInfo"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.getAccountInfo" call.
@@ -3020,7 +3020,7 @@ func (c *RelyingpartyGetOobConfirmationCodeCall) doRequest(alt string) (*http.Re
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.getOobConfirmationCode"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.getOobConfirmationCode" call.
@@ -3159,7 +3159,7 @@ func (c *RelyingpartyGetProjectConfigCall) doRequest(alt string) (*http.Response
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.getProjectConfig"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.getProjectConfig" call.
@@ -3294,7 +3294,7 @@ func (c *RelyingpartyGetPublicKeysCall) doRequest(alt string) (*http.Response, e
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.getPublicKeys"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.getPublicKeys" call.
@@ -3395,7 +3395,7 @@ func (c *RelyingpartyGetRecaptchaParamCall) doRequest(alt string) (*http.Respons
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.getRecaptchaParam"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.getRecaptchaParam" call.
@@ -3509,7 +3509,7 @@ func (c *RelyingpartyResetPasswordCall) doRequest(alt string) (*http.Response, e
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.resetPassword"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.resetPassword" call.
@@ -3626,7 +3626,7 @@ func (c *RelyingpartySendVerificationCodeCall) doRequest(alt string) (*http.Resp
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.sendVerificationCode"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.sendVerificationCode" call.
@@ -3746,7 +3746,7 @@ func (c *RelyingpartySetAccountInfoCall) doRequest(alt string) (*http.Response, 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.setAccountInfo"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.setAccountInfo" call.
@@ -3863,7 +3863,7 @@ func (c *RelyingpartySetProjectConfigCall) doRequest(alt string) (*http.Response
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.setProjectConfig"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.setProjectConfig" call.
@@ -3982,7 +3982,7 @@ func (c *RelyingpartySignOutUserCall) doRequest(alt string) (*http.Response, err
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.signOutUser"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.signOutUser" call.
@@ -4101,7 +4101,7 @@ func (c *RelyingpartySignupNewUserCall) doRequest(alt string) (*http.Response, e
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.signupNewUser"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.signupNewUser" call.
@@ -4218,7 +4218,7 @@ func (c *RelyingpartyUploadAccountCall) doRequest(alt string) (*http.Response, e
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.uploadAccount"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.uploadAccount" call.
@@ -4336,7 +4336,7 @@ func (c *RelyingpartyVerifyAssertionCall) doRequest(alt string) (*http.Response,
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.verifyAssertion"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.verifyAssertion" call.
@@ -4453,7 +4453,7 @@ func (c *RelyingpartyVerifyCustomTokenCall) doRequest(alt string) (*http.Respons
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.verifyCustomToken"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.verifyCustomToken" call.
@@ -4570,7 +4570,7 @@ func (c *RelyingpartyVerifyPasswordCall) doRequest(alt string) (*http.Response, 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.verifyPassword"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.verifyPassword" call.
@@ -4688,7 +4688,7 @@ func (c *RelyingpartyVerifyPhoneNumberCall) doRequest(alt string) (*http.Respons
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "identitytoolkit.relyingparty.verifyPhoneNumber"), c.s.client, req)
 }
 
 // Do executes the "identitytoolkit.relyingparty.verifyPhoneNumber" call.

@@ -4297,7 +4297,7 @@ func (c *ProjectsServicesDisableCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "serviceuser.projects.services.disable"), c.s.client, req)
 }
 
 // Do executes the "serviceuser.projects.services.disable" call.
@@ -4438,7 +4438,7 @@ func (c *ProjectsServicesEnableCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "serviceuser.projects.services.enable"), c.s.client, req)
 }
 
 // Do executes the "serviceuser.projects.services.enable" call.
@@ -4596,7 +4596,7 @@ func (c *ProjectsServicesListCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "serviceuser.projects.services.list"), c.s.client, req)
 }
 
 // Do executes the "serviceuser.projects.services.list" call.
@@ -4784,7 +4784,7 @@ func (c *ServicesSearchCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "serviceuser.services.search"), c.s.client, req)
 }
 
 // Do executes the "serviceuser.services.search" call.

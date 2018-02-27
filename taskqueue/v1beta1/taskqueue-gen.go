@@ -423,7 +423,7 @@ func (c *TaskqueuesGetCall) doRequest(alt string) (*http.Response, error) {
 		"project":   c.project,
 		"taskqueue": c.taskqueue,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "taskqueue.taskqueues.get"), c.s.client, req)
 }
 
 // Do executes the "taskqueue.taskqueues.get" call.
@@ -565,7 +565,7 @@ func (c *TasksDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"taskqueue": c.taskqueue,
 		"task":      c.task,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "taskqueue.tasks.delete"), c.s.client, req)
 }
 
 // Do executes the "taskqueue.tasks.delete" call.
@@ -695,7 +695,7 @@ func (c *TasksGetCall) doRequest(alt string) (*http.Response, error) {
 		"taskqueue": c.taskqueue,
 		"task":      c.task,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "taskqueue.tasks.get"), c.s.client, req)
 }
 
 // Do executes the "taskqueue.tasks.get" call.
@@ -838,7 +838,7 @@ func (c *TasksLeaseCall) doRequest(alt string) (*http.Response, error) {
 		"project":   c.project,
 		"taskqueue": c.taskqueue,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "taskqueue.tasks.lease"), c.s.client, req)
 }
 
 // Do executes the "taskqueue.tasks.lease" call.
@@ -1002,7 +1002,7 @@ func (c *TasksListCall) doRequest(alt string) (*http.Response, error) {
 		"project":   c.project,
 		"taskqueue": c.taskqueue,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "taskqueue.tasks.list"), c.s.client, req)
 }
 
 // Do executes the "taskqueue.tasks.list" call.

@@ -867,7 +867,7 @@ func (c *ProjectsDeleteEventsCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"projectName": c.projectName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouderrorreporting.projects.deleteEvents"), c.s.client, req)
 }
 
 // Do executes the "clouderrorreporting.projects.deleteEvents" call.
@@ -1072,7 +1072,7 @@ func (c *ProjectsEventsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"projectName": c.projectName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouderrorreporting.projects.events.list"), c.s.client, req)
 }
 
 // Do executes the "clouderrorreporting.projects.events.list" call.
@@ -1280,7 +1280,7 @@ func (c *ProjectsEventsReportCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"projectName": c.projectName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouderrorreporting.projects.events.report"), c.s.client, req)
 }
 
 // Do executes the "clouderrorreporting.projects.events.report" call.
@@ -1537,7 +1537,7 @@ func (c *ProjectsGroupStatsListCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"projectName": c.projectName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouderrorreporting.projects.groupStats.list"), c.s.client, req)
 }
 
 // Do executes the "clouderrorreporting.projects.groupStats.list" call.
@@ -1776,7 +1776,7 @@ func (c *ProjectsGroupsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"groupName": c.groupName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouderrorreporting.projects.groups.get"), c.s.client, req)
 }
 
 // Do executes the "clouderrorreporting.projects.groups.get" call.
@@ -1909,7 +1909,7 @@ func (c *ProjectsGroupsUpdateCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouderrorreporting.projects.groups.update"), c.s.client, req)
 }
 
 // Do executes the "clouderrorreporting.projects.groups.update" call.

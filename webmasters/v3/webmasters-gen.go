@@ -855,7 +855,7 @@ func (c *SearchanalyticsQueryCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"siteUrl": c.siteUrl,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.searchanalytics.query"), c.s.client, req)
 }
 
 // Do executes the "webmasters.searchanalytics.query" call.
@@ -985,7 +985,7 @@ func (c *SitemapsDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"siteUrl":  c.siteUrl,
 		"feedpath": c.feedpath,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.sitemaps.delete"), c.s.client, req)
 }
 
 // Do executes the "webmasters.sitemaps.delete" call.
@@ -1104,7 +1104,7 @@ func (c *SitemapsGetCall) doRequest(alt string) (*http.Response, error) {
 		"siteUrl":  c.siteUrl,
 		"feedpath": c.feedpath,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.sitemaps.get"), c.s.client, req)
 }
 
 // Do executes the "webmasters.sitemaps.get" call.
@@ -1259,7 +1259,7 @@ func (c *SitemapsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"siteUrl": c.siteUrl,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.sitemaps.list"), c.s.client, req)
 }
 
 // Do executes the "webmasters.sitemaps.list" call.
@@ -1391,7 +1391,7 @@ func (c *SitemapsSubmitCall) doRequest(alt string) (*http.Response, error) {
 		"siteUrl":  c.siteUrl,
 		"feedpath": c.feedpath,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.sitemaps.submit"), c.s.client, req)
 }
 
 // Do executes the "webmasters.sitemaps.submit" call.
@@ -1493,7 +1493,7 @@ func (c *SitesAddCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"siteUrl": c.siteUrl,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.sites.add"), c.s.client, req)
 }
 
 // Do executes the "webmasters.sites.add" call.
@@ -1589,7 +1589,7 @@ func (c *SitesDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"siteUrl": c.siteUrl,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.sites.delete"), c.s.client, req)
 }
 
 // Do executes the "webmasters.sites.delete" call.
@@ -1698,7 +1698,7 @@ func (c *SitesGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"siteUrl": c.siteUrl,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.sites.get"), c.s.client, req)
 }
 
 // Do executes the "webmasters.sites.get" call.
@@ -1831,7 +1831,7 @@ func (c *SitesListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.sites.list"), c.s.client, req)
 }
 
 // Do executes the "webmasters.sites.list" call.
@@ -1998,7 +1998,7 @@ func (c *UrlcrawlerrorscountsQueryCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"siteUrl": c.siteUrl,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.urlcrawlerrorscounts.query"), c.s.client, req)
 }
 
 // Do executes the "webmasters.urlcrawlerrorscounts.query" call.
@@ -2190,7 +2190,7 @@ func (c *UrlcrawlerrorssamplesGetCall) doRequest(alt string) (*http.Response, er
 		"siteUrl": c.siteUrl,
 		"url":     c.url,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.urlcrawlerrorssamples.get"), c.s.client, req)
 }
 
 // Do executes the "webmasters.urlcrawlerrorssamples.get" call.
@@ -2384,7 +2384,7 @@ func (c *UrlcrawlerrorssamplesListCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"siteUrl": c.siteUrl,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.urlcrawlerrorssamples.list"), c.s.client, req)
 }
 
 // Do executes the "webmasters.urlcrawlerrorssamples.list" call.
@@ -2561,7 +2561,7 @@ func (c *UrlcrawlerrorssamplesMarkAsFixedCall) doRequest(alt string) (*http.Resp
 		"siteUrl": c.siteUrl,
 		"url":     c.url,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "webmasters.urlcrawlerrorssamples.markAsFixed"), c.s.client, req)
 }
 
 // Do executes the "webmasters.urlcrawlerrorssamples.markAsFixed" call.

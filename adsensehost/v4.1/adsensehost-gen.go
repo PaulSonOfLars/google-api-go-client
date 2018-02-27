@@ -1111,7 +1111,7 @@ func (c *AccountsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.accounts.get"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.accounts.get" call.
@@ -1245,7 +1245,7 @@ func (c *AccountsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.accounts.list"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.accounts.list" call.
@@ -1387,7 +1387,7 @@ func (c *AccountsAdclientsGetCall) doRequest(alt string) (*http.Response, error)
 		"accountId":  c.accountId,
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.accounts.adclients.get"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.accounts.adclients.get" call.
@@ -1547,7 +1547,7 @@ func (c *AccountsAdclientsListCall) doRequest(alt string) (*http.Response, error
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.accounts.adclients.list"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.accounts.adclients.list" call.
@@ -1711,7 +1711,7 @@ func (c *AccountsAdunitsDeleteCall) doRequest(alt string) (*http.Response, error
 		"adClientId": c.adClientId,
 		"adUnitId":   c.adUnitId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.accounts.adunits.delete"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.accounts.adunits.delete" call.
@@ -1868,7 +1868,7 @@ func (c *AccountsAdunitsGetCall) doRequest(alt string) (*http.Response, error) {
 		"adClientId": c.adClientId,
 		"adUnitId":   c.adUnitId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.accounts.adunits.get"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.accounts.adunits.get" call.
@@ -2033,7 +2033,7 @@ func (c *AccountsAdunitsGetAdCodeCall) doRequest(alt string) (*http.Response, er
 		"adClientId": c.adClientId,
 		"adUnitId":   c.adUnitId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.accounts.adunits.getAdCode"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.accounts.adunits.getAdCode" call.
@@ -2187,7 +2187,7 @@ func (c *AccountsAdunitsInsertCall) doRequest(alt string) (*http.Response, error
 		"accountId":  c.accountId,
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.accounts.adunits.insert"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.accounts.adunits.insert" call.
@@ -2360,7 +2360,7 @@ func (c *AccountsAdunitsListCall) doRequest(alt string) (*http.Response, error) 
 		"accountId":  c.accountId,
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.accounts.adunits.list"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.accounts.adunits.list" call.
@@ -2541,7 +2541,7 @@ func (c *AccountsAdunitsPatchCall) doRequest(alt string) (*http.Response, error)
 		"accountId":  c.accountId,
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.accounts.adunits.patch"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.accounts.adunits.patch" call.
@@ -2692,7 +2692,7 @@ func (c *AccountsAdunitsUpdateCall) doRequest(alt string) (*http.Response, error
 		"accountId":  c.accountId,
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.accounts.adunits.update"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.accounts.adunits.update" call.
@@ -2895,7 +2895,7 @@ func (c *AccountsReportsGenerateCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.accounts.reports.generate"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.accounts.reports.generate" call.
@@ -3099,7 +3099,7 @@ func (c *AdclientsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.adclients.get"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.adclients.get" call.
@@ -3247,7 +3247,7 @@ func (c *AdclientsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.adclients.list"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.adclients.list" call.
@@ -3421,7 +3421,7 @@ func (c *AssociationsessionsStartCall) doRequest(alt string) (*http.Response, er
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.associationsessions.start"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.associationsessions.start" call.
@@ -3587,7 +3587,7 @@ func (c *AssociationsessionsVerifyCall) doRequest(alt string) (*http.Response, e
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.associationsessions.verify"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.associationsessions.verify" call.
@@ -3714,7 +3714,7 @@ func (c *CustomchannelsDeleteCall) doRequest(alt string) (*http.Response, error)
 		"adClientId":      c.adClientId,
 		"customChannelId": c.customChannelId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.customchannels.delete"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.customchannels.delete" call.
@@ -3861,7 +3861,7 @@ func (c *CustomchannelsGetCall) doRequest(alt string) (*http.Response, error) {
 		"adClientId":      c.adClientId,
 		"customChannelId": c.customChannelId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.customchannels.get"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.customchannels.get" call.
@@ -3998,7 +3998,7 @@ func (c *CustomchannelsInsertCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.customchannels.insert"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.customchannels.insert" call.
@@ -4155,7 +4155,7 @@ func (c *CustomchannelsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.customchannels.list"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.customchannels.list" call.
@@ -4321,7 +4321,7 @@ func (c *CustomchannelsPatchCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.customchannels.patch"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.customchannels.patch" call.
@@ -4461,7 +4461,7 @@ func (c *CustomchannelsUpdateCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.customchannels.update"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.customchannels.update" call.
@@ -4652,7 +4652,7 @@ func (c *ReportsGenerateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.reports.generate"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.reports.generate" call.
@@ -4837,7 +4837,7 @@ func (c *UrlchannelsDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"adClientId":   c.adClientId,
 		"urlChannelId": c.urlChannelId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.urlchannels.delete"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.urlchannels.delete" call.
@@ -4974,7 +4974,7 @@ func (c *UrlchannelsInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.urlchannels.insert"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.urlchannels.insert" call.
@@ -5130,7 +5130,7 @@ func (c *UrlchannelsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adsensehost.urlchannels.list"), c.s.client, req)
 }
 
 // Do executes the "adsensehost.urlchannels.list" call.

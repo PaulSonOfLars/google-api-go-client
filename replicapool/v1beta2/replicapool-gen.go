@@ -820,7 +820,7 @@ func (c *InstanceGroupManagersAbandonInstancesCall) doRequest(alt string) (*http
 		"zone":                 c.zone,
 		"instanceGroupManager": c.instanceGroupManager,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.instanceGroupManagers.abandonInstances"), c.s.client, req)
 }
 
 // Do executes the "replicapool.instanceGroupManagers.abandonInstances" call.
@@ -973,7 +973,7 @@ func (c *InstanceGroupManagersDeleteCall) doRequest(alt string) (*http.Response,
 		"zone":                 c.zone,
 		"instanceGroupManager": c.instanceGroupManager,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.instanceGroupManagers.delete"), c.s.client, req)
 }
 
 // Do executes the "replicapool.instanceGroupManagers.delete" call.
@@ -1130,7 +1130,7 @@ func (c *InstanceGroupManagersDeleteInstancesCall) doRequest(alt string) (*http.
 		"zone":                 c.zone,
 		"instanceGroupManager": c.instanceGroupManager,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.instanceGroupManagers.deleteInstances"), c.s.client, req)
 }
 
 // Do executes the "replicapool.instanceGroupManagers.deleteInstances" call.
@@ -1294,7 +1294,7 @@ func (c *InstanceGroupManagersGetCall) doRequest(alt string) (*http.Response, er
 		"zone":                 c.zone,
 		"instanceGroupManager": c.instanceGroupManager,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.instanceGroupManagers.get"), c.s.client, req)
 }
 
 // Do executes the "replicapool.instanceGroupManagers.get" call.
@@ -1449,7 +1449,7 @@ func (c *InstanceGroupManagersInsertCall) doRequest(alt string) (*http.Response,
 		"project": c.project,
 		"zone":    c.zone,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.instanceGroupManagers.insert"), c.s.client, req)
 }
 
 // Do executes the "replicapool.instanceGroupManagers.insert" call.
@@ -1635,7 +1635,7 @@ func (c *InstanceGroupManagersListCall) doRequest(alt string) (*http.Response, e
 		"project": c.project,
 		"zone":    c.zone,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.instanceGroupManagers.list"), c.s.client, req)
 }
 
 // Do executes the "replicapool.instanceGroupManagers.list" call.
@@ -1825,7 +1825,7 @@ func (c *InstanceGroupManagersRecreateInstancesCall) doRequest(alt string) (*htt
 		"zone":                 c.zone,
 		"instanceGroupManager": c.instanceGroupManager,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.instanceGroupManagers.recreateInstances"), c.s.client, req)
 }
 
 // Do executes the "replicapool.instanceGroupManagers.recreateInstances" call.
@@ -1979,7 +1979,7 @@ func (c *InstanceGroupManagersResizeCall) doRequest(alt string) (*http.Response,
 		"zone":                 c.zone,
 		"instanceGroupManager": c.instanceGroupManager,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.instanceGroupManagers.resize"), c.s.client, req)
 }
 
 // Do executes the "replicapool.instanceGroupManagers.resize" call.
@@ -2143,7 +2143,7 @@ func (c *InstanceGroupManagersSetInstanceTemplateCall) doRequest(alt string) (*h
 		"zone":                 c.zone,
 		"instanceGroupManager": c.instanceGroupManager,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.instanceGroupManagers.setInstanceTemplate"), c.s.client, req)
 }
 
 // Do executes the "replicapool.instanceGroupManagers.setInstanceTemplate" call.
@@ -2302,7 +2302,7 @@ func (c *InstanceGroupManagersSetTargetPoolsCall) doRequest(alt string) (*http.R
 		"zone":                 c.zone,
 		"instanceGroupManager": c.instanceGroupManager,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.instanceGroupManagers.setTargetPools"), c.s.client, req)
 }
 
 // Do executes the "replicapool.instanceGroupManagers.setTargetPools" call.
@@ -2466,7 +2466,7 @@ func (c *ZoneOperationsGetCall) doRequest(alt string) (*http.Response, error) {
 		"zone":      c.zone,
 		"operation": c.operation,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.zoneOperations.get"), c.s.client, req)
 }
 
 // Do executes the "replicapool.zoneOperations.get" call.
@@ -2648,7 +2648,7 @@ func (c *ZoneOperationsListCall) doRequest(alt string) (*http.Response, error) {
 		"project": c.project,
 		"zone":    c.zone,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.zoneOperations.list"), c.s.client, req)
 }
 
 // Do executes the "replicapool.zoneOperations.list" call.

@@ -807,7 +807,7 @@ func (c *OauthClientIdsHandleRedirectCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"clientId": c.clientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "iap.oauth.clientIds.handleRedirect"), c.s.client, req)
 }
 
 // Do executes the "iap.oauth.clientIds.handleRedirect" call.
@@ -972,7 +972,7 @@ func (c *ProjectsIapWebGetIamPolicyCall) doRequest(alt string) (*http.Response, 
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "iap.projects.iap_web.getIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "iap.projects.iap_web.getIamPolicy" call.
@@ -1113,7 +1113,7 @@ func (c *ProjectsIapWebSetIamPolicyCall) doRequest(alt string) (*http.Response, 
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "iap.projects.iap_web.setIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "iap.projects.iap_web.setIamPolicy" call.
@@ -1258,7 +1258,7 @@ func (c *ProjectsIapWebTestIamPermissionsCall) doRequest(alt string) (*http.Resp
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "iap.projects.iap_web.testIamPermissions"), c.s.client, req)
 }
 
 // Do executes the "iap.projects.iap_web.testIamPermissions" call.
@@ -1399,7 +1399,7 @@ func (c *ProjectsIapWebServicesGetIamPolicyCall) doRequest(alt string) (*http.Re
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "iap.projects.iap_web.services.getIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "iap.projects.iap_web.services.getIamPolicy" call.
@@ -1540,7 +1540,7 @@ func (c *ProjectsIapWebServicesSetIamPolicyCall) doRequest(alt string) (*http.Re
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "iap.projects.iap_web.services.setIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "iap.projects.iap_web.services.setIamPolicy" call.
@@ -1685,7 +1685,7 @@ func (c *ProjectsIapWebServicesTestIamPermissionsCall) doRequest(alt string) (*h
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "iap.projects.iap_web.services.testIamPermissions"), c.s.client, req)
 }
 
 // Do executes the "iap.projects.iap_web.services.testIamPermissions" call.
@@ -1826,7 +1826,7 @@ func (c *ProjectsIapWebServicesVersionsGetIamPolicyCall) doRequest(alt string) (
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "iap.projects.iap_web.services.versions.getIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "iap.projects.iap_web.services.versions.getIamPolicy" call.
@@ -1967,7 +1967,7 @@ func (c *ProjectsIapWebServicesVersionsSetIamPolicyCall) doRequest(alt string) (
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "iap.projects.iap_web.services.versions.setIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "iap.projects.iap_web.services.versions.setIamPolicy" call.
@@ -2112,7 +2112,7 @@ func (c *ProjectsIapWebServicesVersionsTestIamPermissionsCall) doRequest(alt str
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "iap.projects.iap_web.services.versions.testIamPermissions"), c.s.client, req)
 }
 
 // Do executes the "iap.projects.iap_web.services.versions.testIamPermissions" call.

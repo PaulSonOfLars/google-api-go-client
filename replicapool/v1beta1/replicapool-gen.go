@@ -1134,7 +1134,7 @@ func (c *PoolsDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"zone":        c.zone,
 		"poolName":    c.poolName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.pools.delete"), c.s.client, req)
 }
 
 // Do executes the "replicapool.pools.delete" call.
@@ -1268,7 +1268,7 @@ func (c *PoolsGetCall) doRequest(alt string) (*http.Response, error) {
 		"zone":        c.zone,
 		"poolName":    c.poolName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.pools.get"), c.s.client, req)
 }
 
 // Do executes the "replicapool.pools.get" call.
@@ -1420,7 +1420,7 @@ func (c *PoolsInsertCall) doRequest(alt string) (*http.Response, error) {
 		"projectName": c.projectName,
 		"zone":        c.zone,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.pools.insert"), c.s.client, req)
 }
 
 // Do executes the "replicapool.pools.insert" call.
@@ -1588,7 +1588,7 @@ func (c *PoolsListCall) doRequest(alt string) (*http.Response, error) {
 		"projectName": c.projectName,
 		"zone":        c.zone,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.pools.list"), c.s.client, req)
 }
 
 // Do executes the "replicapool.pools.list" call.
@@ -1775,7 +1775,7 @@ func (c *PoolsResizeCall) doRequest(alt string) (*http.Response, error) {
 		"zone":        c.zone,
 		"poolName":    c.poolName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.pools.resize"), c.s.client, req)
 }
 
 // Do executes the "replicapool.pools.resize" call.
@@ -1933,7 +1933,7 @@ func (c *PoolsUpdatetemplateCall) doRequest(alt string) (*http.Response, error) 
 		"zone":        c.zone,
 		"poolName":    c.poolName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.pools.updatetemplate"), c.s.client, req)
 }
 
 // Do executes the "replicapool.pools.updatetemplate" call.
@@ -2063,7 +2063,7 @@ func (c *ReplicasDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"poolName":    c.poolName,
 		"replicaName": c.replicaName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.replicas.delete"), c.s.client, req)
 }
 
 // Do executes the "replicapool.replicas.delete" call.
@@ -2235,7 +2235,7 @@ func (c *ReplicasGetCall) doRequest(alt string) (*http.Response, error) {
 		"poolName":    c.poolName,
 		"replicaName": c.replicaName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.replicas.get"), c.s.client, req)
 }
 
 // Do executes the "replicapool.replicas.get" call.
@@ -2420,7 +2420,7 @@ func (c *ReplicasListCall) doRequest(alt string) (*http.Response, error) {
 		"zone":        c.zone,
 		"poolName":    c.poolName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.replicas.list"), c.s.client, req)
 }
 
 // Do executes the "replicapool.replicas.list" call.
@@ -2606,7 +2606,7 @@ func (c *ReplicasRestartCall) doRequest(alt string) (*http.Response, error) {
 		"poolName":    c.poolName,
 		"replicaName": c.replicaName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "replicapool.replicas.restart"), c.s.client, req)
 }
 
 // Do executes the "replicapool.replicas.restart" call.

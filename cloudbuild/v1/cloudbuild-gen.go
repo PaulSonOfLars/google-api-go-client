@@ -1636,7 +1636,7 @@ func (c *OperationsCancelCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.operations.cancel"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.operations.cancel" call.
@@ -1782,7 +1782,7 @@ func (c *OperationsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.operations.get"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.operations.get" call.
@@ -1958,7 +1958,7 @@ func (c *OperationsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.operations.list"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.operations.list" call.
@@ -2130,7 +2130,7 @@ func (c *ProjectsBuildsCancelCall) doRequest(alt string) (*http.Response, error)
 		"projectId": c.projectId,
 		"id":        c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.projects.builds.cancel"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.projects.builds.cancel" call.
@@ -2277,7 +2277,7 @@ func (c *ProjectsBuildsCreateCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"projectId": c.projectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.projects.builds.create"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.projects.builds.create" call.
@@ -2425,7 +2425,7 @@ func (c *ProjectsBuildsGetCall) doRequest(alt string) (*http.Response, error) {
 		"projectId": c.projectId,
 		"id":        c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.projects.builds.get"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.projects.builds.get" call.
@@ -2595,7 +2595,7 @@ func (c *ProjectsBuildsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"projectId": c.projectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.projects.builds.list"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.projects.builds.list" call.
@@ -2803,7 +2803,7 @@ func (c *ProjectsBuildsRetryCall) doRequest(alt string) (*http.Response, error) 
 		"projectId": c.projectId,
 		"id":        c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.projects.builds.retry"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.projects.builds.retry" call.
@@ -2946,7 +2946,7 @@ func (c *ProjectsTriggersCreateCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"projectId": c.projectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.projects.triggers.create"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.projects.triggers.create" call.
@@ -3079,7 +3079,7 @@ func (c *ProjectsTriggersDeleteCall) doRequest(alt string) (*http.Response, erro
 		"projectId": c.projectId,
 		"triggerId": c.triggerId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.projects.triggers.delete"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.projects.triggers.delete" call.
@@ -3229,7 +3229,7 @@ func (c *ProjectsTriggersGetCall) doRequest(alt string) (*http.Response, error) 
 		"projectId": c.projectId,
 		"triggerId": c.triggerId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.projects.triggers.get"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.projects.triggers.get" call.
@@ -3376,7 +3376,7 @@ func (c *ProjectsTriggersListCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"projectId": c.projectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.projects.triggers.list"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.projects.triggers.list" call.
@@ -3513,7 +3513,7 @@ func (c *ProjectsTriggersPatchCall) doRequest(alt string) (*http.Response, error
 		"projectId": c.projectId,
 		"triggerId": c.triggerId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.projects.triggers.patch"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.projects.triggers.patch" call.
@@ -3657,7 +3657,7 @@ func (c *ProjectsTriggersRunCall) doRequest(alt string) (*http.Response, error) 
 		"projectId": c.projectId,
 		"triggerId": c.triggerId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudbuild.projects.triggers.run"), c.s.client, req)
 }
 
 // Do executes the "cloudbuild.projects.triggers.run" call.

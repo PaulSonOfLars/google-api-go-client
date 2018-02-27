@@ -1321,7 +1321,7 @@ func (c *AccountsInsertCall) doRequest(alt string) (*http.Response, error) {
 		"accountType": c.accountType,
 		"accountName": c.accountName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.accounts.insert"), c.s.client, req)
 }
 
 // Do executes the "mirror.accounts.insert" call.
@@ -1458,7 +1458,7 @@ func (c *ContactsDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.contacts.delete"), c.s.client, req)
 }
 
 // Do executes the "mirror.contacts.delete" call.
@@ -1567,7 +1567,7 @@ func (c *ContactsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.contacts.get"), c.s.client, req)
 }
 
 // Do executes the "mirror.contacts.get" call.
@@ -1692,7 +1692,7 @@ func (c *ContactsInsertCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.contacts.insert"), c.s.client, req)
 }
 
 // Do executes the "mirror.contacts.insert" call.
@@ -1816,7 +1816,7 @@ func (c *ContactsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.contacts.list"), c.s.client, req)
 }
 
 // Do executes the "mirror.contacts.list" call.
@@ -1936,7 +1936,7 @@ func (c *ContactsPatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.contacts.patch"), c.s.client, req)
 }
 
 // Do executes the "mirror.contacts.patch" call.
@@ -2069,7 +2069,7 @@ func (c *ContactsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.contacts.update"), c.s.client, req)
 }
 
 // Do executes the "mirror.contacts.update" call.
@@ -2209,7 +2209,7 @@ func (c *LocationsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.locations.get"), c.s.client, req)
 }
 
 // Do executes the "mirror.locations.get" call.
@@ -2342,7 +2342,7 @@ func (c *LocationsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.locations.list"), c.s.client, req)
 }
 
 // Do executes the "mirror.locations.list" call.
@@ -2469,7 +2469,7 @@ func (c *SettingsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.settings.get"), c.s.client, req)
 }
 
 // Do executes the "mirror.settings.get" call.
@@ -2592,7 +2592,7 @@ func (c *SubscriptionsDeleteCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.subscriptions.delete"), c.s.client, req)
 }
 
 // Do executes the "mirror.subscriptions.delete" call.
@@ -2689,7 +2689,7 @@ func (c *SubscriptionsInsertCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.subscriptions.insert"), c.s.client, req)
 }
 
 // Do executes the "mirror.subscriptions.insert" call.
@@ -2814,7 +2814,7 @@ func (c *SubscriptionsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.subscriptions.list"), c.s.client, req)
 }
 
 // Do executes the "mirror.subscriptions.list" call.
@@ -2933,7 +2933,7 @@ func (c *SubscriptionsUpdateCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.subscriptions.update"), c.s.client, req)
 }
 
 // Do executes the "mirror.subscriptions.update" call.
@@ -3059,7 +3059,7 @@ func (c *TimelineDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.timeline.delete"), c.s.client, req)
 }
 
 // Do executes the "mirror.timeline.delete" call.
@@ -3169,7 +3169,7 @@ func (c *TimelineGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.timeline.get"), c.s.client, req)
 }
 
 // Do executes the "mirror.timeline.get" call.
@@ -3346,7 +3346,7 @@ func (c *TimelineInsertCall) doRequest(alt string) (*http.Response, error) {
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
 	gensupport.SetGetBody(req, getBody)
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.timeline.insert"), c.s.client, req)
 }
 
 // Do executes the "mirror.timeline.insert" call.
@@ -3562,7 +3562,7 @@ func (c *TimelineListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.timeline.list"), c.s.client, req)
 }
 
 // Do executes the "mirror.timeline.list" call.
@@ -3750,7 +3750,7 @@ func (c *TimelinePatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.timeline.patch"), c.s.client, req)
 }
 
 // Do executes the "mirror.timeline.patch" call.
@@ -3935,7 +3935,7 @@ func (c *TimelineUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.timeline.update"), c.s.client, req)
 }
 
 // Do executes the "mirror.timeline.update" call.
@@ -4101,7 +4101,7 @@ func (c *TimelineAttachmentsDeleteCall) doRequest(alt string) (*http.Response, e
 		"itemId":       c.itemId,
 		"attachmentId": c.attachmentId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.timeline.attachments.delete"), c.s.client, req)
 }
 
 // Do executes the "mirror.timeline.attachments.delete" call.
@@ -4221,7 +4221,7 @@ func (c *TimelineAttachmentsGetCall) doRequest(alt string) (*http.Response, erro
 		"itemId":       c.itemId,
 		"attachmentId": c.attachmentId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.timeline.attachments.get"), c.s.client, req)
 }
 
 // Download fetches the API endpoint's "media" value, instead of the normal
@@ -4419,7 +4419,7 @@ func (c *TimelineAttachmentsInsertCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"itemId": c.itemId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.timeline.attachments.insert"), c.s.client, req)
 }
 
 // Do executes the "mirror.timeline.attachments.insert" call.
@@ -4592,7 +4592,7 @@ func (c *TimelineAttachmentsListCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"itemId": c.itemId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "mirror.timeline.attachments.list"), c.s.client, req)
 }
 
 // Do executes the "mirror.timeline.attachments.list" call.

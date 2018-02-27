@@ -1420,7 +1420,7 @@ func (c *ProjectsLocationsRegistriesCreateCall) doRequest(alt string) (*http.Res
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.create"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.create" call.
@@ -1549,7 +1549,7 @@ func (c *ProjectsLocationsRegistriesDeleteCall) doRequest(alt string) (*http.Res
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.delete"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.delete" call.
@@ -1689,7 +1689,7 @@ func (c *ProjectsLocationsRegistriesGetCall) doRequest(alt string) (*http.Respon
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.get"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.get" call.
@@ -1825,7 +1825,7 @@ func (c *ProjectsLocationsRegistriesGetIamPolicyCall) doRequest(alt string) (*ht
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.getIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.getIamPolicy" call.
@@ -1990,7 +1990,7 @@ func (c *ProjectsLocationsRegistriesListCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.list"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.list" call.
@@ -2167,7 +2167,7 @@ func (c *ProjectsLocationsRegistriesPatchCall) doRequest(alt string) (*http.Resp
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.patch"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.patch" call.
@@ -2311,7 +2311,7 @@ func (c *ProjectsLocationsRegistriesSetIamPolicyCall) doRequest(alt string) (*ht
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.setIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.setIamPolicy" call.
@@ -2451,7 +2451,7 @@ func (c *ProjectsLocationsRegistriesTestIamPermissionsCall) doRequest(alt string
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.testIamPermissions"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.testIamPermissions" call.
@@ -2587,7 +2587,7 @@ func (c *ProjectsLocationsRegistriesDevicesCreateCall) doRequest(alt string) (*h
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.devices.create"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.devices.create" call.
@@ -2716,7 +2716,7 @@ func (c *ProjectsLocationsRegistriesDevicesDeleteCall) doRequest(alt string) (*h
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.devices.delete"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.devices.delete" call.
@@ -2856,7 +2856,7 @@ func (c *ProjectsLocationsRegistriesDevicesGetCall) doRequest(alt string) (*http
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.devices.get"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.devices.get" call.
@@ -3049,7 +3049,7 @@ func (c *ProjectsLocationsRegistriesDevicesListCall) doRequest(alt string) (*htt
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.devices.list"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.devices.list" call.
@@ -3237,7 +3237,7 @@ func (c *ProjectsLocationsRegistriesDevicesModifyCloudToDeviceConfigCall) doRequ
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.devices.modifyCloudToDeviceConfig"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.devices.modifyCloudToDeviceConfig" call.
@@ -3384,7 +3384,7 @@ func (c *ProjectsLocationsRegistriesDevicesPatchCall) doRequest(alt string) (*ht
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.devices.patch"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.devices.patch" call.
@@ -3545,7 +3545,7 @@ func (c *ProjectsLocationsRegistriesDevicesConfigVersionsListCall) doRequest(alt
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudiot.projects.locations.registries.devices.configVersions.list"), c.s.client, req)
 }
 
 // Do executes the "cloudiot.projects.locations.registries.devices.configVersions.list" call.

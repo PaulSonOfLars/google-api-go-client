@@ -1547,7 +1547,7 @@ func (c *ControllerDebuggeesRegisterCall) doRequest(alt string) (*http.Response,
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouddebugger.controller.debuggees.register"), c.s.client, req)
 }
 
 // Do executes the "clouddebugger.controller.debuggees.register" call.
@@ -1727,7 +1727,7 @@ func (c *ControllerDebuggeesBreakpointsListCall) doRequest(alt string) (*http.Re
 	googleapi.Expand(req.URL, map[string]string{
 		"debuggeeId": c.debuggeeId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouddebugger.controller.debuggees.breakpoints.list"), c.s.client, req)
 }
 
 // Do executes the "clouddebugger.controller.debuggees.breakpoints.list" call.
@@ -1884,7 +1884,7 @@ func (c *ControllerDebuggeesBreakpointsUpdateCall) doRequest(alt string) (*http.
 		"debuggeeId": c.debuggeeId,
 		"id":         c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouddebugger.controller.debuggees.breakpoints.update"), c.s.client, req)
 }
 
 // Do executes the "clouddebugger.controller.debuggees.breakpoints.update" call.
@@ -2052,7 +2052,7 @@ func (c *DebuggerDebuggeesListCall) doRequest(alt string) (*http.Response, error
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouddebugger.debugger.debuggees.list"), c.s.client, req)
 }
 
 // Do executes the "clouddebugger.debugger.debuggees.list" call.
@@ -2195,7 +2195,7 @@ func (c *DebuggerDebuggeesBreakpointsDeleteCall) doRequest(alt string) (*http.Re
 		"debuggeeId":   c.debuggeeId,
 		"breakpointId": c.breakpointId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouddebugger.debugger.debuggees.breakpoints.delete"), c.s.client, req)
 }
 
 // Do executes the "clouddebugger.debugger.debuggees.breakpoints.delete" call.
@@ -2357,7 +2357,7 @@ func (c *DebuggerDebuggeesBreakpointsGetCall) doRequest(alt string) (*http.Respo
 		"debuggeeId":   c.debuggeeId,
 		"breakpointId": c.breakpointId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouddebugger.debugger.debuggees.breakpoints.get"), c.s.client, req)
 }
 
 // Do executes the "clouddebugger.debugger.debuggees.breakpoints.get" call.
@@ -2567,7 +2567,7 @@ func (c *DebuggerDebuggeesBreakpointsListCall) doRequest(alt string) (*http.Resp
 	googleapi.Expand(req.URL, map[string]string{
 		"debuggeeId": c.debuggeeId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouddebugger.debugger.debuggees.breakpoints.list"), c.s.client, req)
 }
 
 // Do executes the "clouddebugger.debugger.debuggees.breakpoints.list" call.
@@ -2741,7 +2741,7 @@ func (c *DebuggerDebuggeesBreakpointsSetCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"debuggeeId": c.debuggeeId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouddebugger.debugger.debuggees.breakpoints.set"), c.s.client, req)
 }
 
 // Do executes the "clouddebugger.debugger.debuggees.breakpoints.set" call.

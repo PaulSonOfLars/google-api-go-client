@@ -7805,7 +7805,7 @@ func (c *PresentationsBatchUpdateCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"presentationId": c.presentationId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "slides.presentations.batchUpdate"), c.s.client, req)
 }
 
 // Do executes the "slides.presentations.batchUpdate" call.
@@ -7944,7 +7944,7 @@ func (c *PresentationsCreateCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "slides.presentations.create"), c.s.client, req)
 }
 
 // Do executes the "slides.presentations.create" call.
@@ -8078,7 +8078,7 @@ func (c *PresentationsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"presentationId": c.presentationId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "slides.presentations.get"), c.s.client, req)
 }
 
 // Do executes the "slides.presentations.get" call.
@@ -8225,7 +8225,7 @@ func (c *PresentationsPagesGetCall) doRequest(alt string) (*http.Response, error
 		"presentationId": c.presentationId,
 		"pageObjectId":   c.pageObjectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "slides.presentations.pages.get"), c.s.client, req)
 }
 
 // Do executes the "slides.presentations.pages.get" call.
@@ -8413,7 +8413,7 @@ func (c *PresentationsPagesGetThumbnailCall) doRequest(alt string) (*http.Respon
 		"presentationId": c.presentationId,
 		"pageObjectId":   c.pageObjectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "slides.presentations.pages.getThumbnail"), c.s.client, req)
 }
 
 // Do executes the "slides.presentations.pages.getThumbnail" call.

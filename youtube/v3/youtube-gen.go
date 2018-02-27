@@ -9708,7 +9708,7 @@ func (c *ActivitiesInsertCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.activities.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.activities.insert" call.
@@ -9924,7 +9924,7 @@ func (c *ActivitiesListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.activities.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.activities.list" call.
@@ -10138,7 +10138,7 @@ func (c *CaptionsDeleteCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.captions.delete"), c.s.client, req)
 }
 
 // Do executes the "youtube.captions.delete" call.
@@ -10314,7 +10314,7 @@ func (c *CaptionsDownloadCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"id": c.id,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.captions.download"), c.s.client, req)
 }
 
 // Download fetches the API endpoint's "media" value, instead of the normal
@@ -10555,7 +10555,7 @@ func (c *CaptionsInsertCall) doRequest(alt string) (*http.Response, error) {
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
 	gensupport.SetGetBody(req, getBody)
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.captions.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.captions.insert" call.
@@ -10782,7 +10782,7 @@ func (c *CaptionsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.captions.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.captions.list" call.
@@ -11023,7 +11023,7 @@ func (c *CaptionsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	req, _ := http.NewRequest("PUT", urls, body)
 	req.Header = reqHeaders
 	gensupport.SetGetBody(req, getBody)
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.captions.update"), c.s.client, req)
 }
 
 // Do executes the "youtube.captions.update" call.
@@ -11298,7 +11298,7 @@ func (c *ChannelBannersInsertCall) doRequest(alt string) (*http.Response, error)
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
 	gensupport.SetGetBody(req, getBody)
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.channelBanners.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.channelBanners.insert" call.
@@ -11477,7 +11477,7 @@ func (c *ChannelSectionsDeleteCall) doRequest(alt string) (*http.Response, error
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.channelSections.delete"), c.s.client, req)
 }
 
 // Do executes the "youtube.channelSections.delete" call.
@@ -11626,7 +11626,7 @@ func (c *ChannelSectionsInsertCall) doRequest(alt string) (*http.Response, error
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.channelSections.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.channelSections.insert" call.
@@ -11831,7 +11831,7 @@ func (c *ChannelSectionsListCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.channelSections.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.channelSections.list" call.
@@ -12003,7 +12003,7 @@ func (c *ChannelSectionsUpdateCall) doRequest(alt string) (*http.Response, error
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("PUT", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.channelSections.update"), c.s.client, req)
 }
 
 // Do executes the "youtube.channelSections.update" call.
@@ -12244,7 +12244,7 @@ func (c *ChannelsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.channels.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.channels.list" call.
@@ -12466,7 +12466,7 @@ func (c *ChannelsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("PUT", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.channels.update"), c.s.client, req)
 }
 
 // Do executes the "youtube.channels.update" call.
@@ -12603,7 +12603,7 @@ func (c *CommentThreadsInsertCall) doRequest(alt string) (*http.Response, error)
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.commentThreads.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.commentThreads.insert" call.
@@ -12863,7 +12863,7 @@ func (c *CommentThreadsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.commentThreads.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.commentThreads.list" call.
@@ -13093,7 +13093,7 @@ func (c *CommentThreadsUpdateCall) doRequest(alt string) (*http.Response, error)
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("PUT", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.commentThreads.update"), c.s.client, req)
 }
 
 // Do executes the "youtube.commentThreads.update" call.
@@ -13215,7 +13215,7 @@ func (c *CommentsDeleteCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.comments.delete"), c.s.client, req)
 }
 
 // Do executes the "youtube.comments.delete" call.
@@ -13314,7 +13314,7 @@ func (c *CommentsInsertCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.comments.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.comments.insert" call.
@@ -13507,7 +13507,7 @@ func (c *CommentsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.comments.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.comments.list" call.
@@ -13686,7 +13686,7 @@ func (c *CommentsMarkAsSpamCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.comments.markAsSpam"), c.s.client, req)
 }
 
 // Do executes the "youtube.comments.markAsSpam" call.
@@ -13792,7 +13792,7 @@ func (c *CommentsSetModerationStatusCall) doRequest(alt string) (*http.Response,
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.comments.setModerationStatus"), c.s.client, req)
 }
 
 // Do executes the "youtube.comments.setModerationStatus" call.
@@ -13913,7 +13913,7 @@ func (c *CommentsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("PUT", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.comments.update"), c.s.client, req)
 }
 
 // Do executes the "youtube.comments.update" call.
@@ -14075,7 +14075,7 @@ func (c *GuideCategoriesListCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.guideCategories.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.guideCategories.list" call.
@@ -14235,7 +14235,7 @@ func (c *I18nLanguagesListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.i18nLanguages.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.i18nLanguages.list" call.
@@ -14385,7 +14385,7 @@ func (c *I18nRegionsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.i18nRegions.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.i18nRegions.list" call.
@@ -14570,7 +14570,7 @@ func (c *LiveBroadcastsBindCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveBroadcasts.bind"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveBroadcasts.bind" call.
@@ -14795,7 +14795,7 @@ func (c *LiveBroadcastsControlCall) doRequest(alt string) (*http.Response, error
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveBroadcasts.control"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveBroadcasts.control" call.
@@ -14993,7 +14993,7 @@ func (c *LiveBroadcastsDeleteCall) doRequest(alt string) (*http.Response, error)
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveBroadcasts.delete"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveBroadcasts.delete" call.
@@ -15146,7 +15146,7 @@ func (c *LiveBroadcastsInsertCall) doRequest(alt string) (*http.Response, error)
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveBroadcasts.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveBroadcasts.insert" call.
@@ -15401,7 +15401,7 @@ func (c *LiveBroadcastsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveBroadcasts.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveBroadcasts.list" call.
@@ -15662,7 +15662,7 @@ func (c *LiveBroadcastsTransitionCall) doRequest(alt string) (*http.Response, er
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveBroadcasts.transition"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveBroadcasts.transition" call.
@@ -15869,7 +15869,7 @@ func (c *LiveBroadcastsUpdateCall) doRequest(alt string) (*http.Response, error)
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("PUT", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveBroadcasts.update"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveBroadcasts.update" call.
@@ -16002,7 +16002,7 @@ func (c *LiveChatBansDeleteCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveChatBans.delete"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveChatBans.delete" call.
@@ -16101,7 +16101,7 @@ func (c *LiveChatBansInsertCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveChatBans.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveChatBans.insert" call.
@@ -16224,7 +16224,7 @@ func (c *LiveChatMessagesDeleteCall) doRequest(alt string) (*http.Response, erro
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveChatMessages.delete"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveChatMessages.delete" call.
@@ -16323,7 +16323,7 @@ func (c *LiveChatMessagesInsertCall) doRequest(alt string) (*http.Response, erro
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveChatMessages.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveChatMessages.insert" call.
@@ -16502,7 +16502,7 @@ func (c *LiveChatMessagesListCall) doRequest(alt string) (*http.Response, error)
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveChatMessages.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveChatMessages.list" call.
@@ -16678,7 +16678,7 @@ func (c *LiveChatModeratorsDeleteCall) doRequest(alt string) (*http.Response, er
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveChatModerators.delete"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveChatModerators.delete" call.
@@ -16777,7 +16777,7 @@ func (c *LiveChatModeratorsInsertCall) doRequest(alt string) (*http.Response, er
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveChatModerators.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveChatModerators.insert" call.
@@ -16932,7 +16932,7 @@ func (c *LiveChatModeratorsListCall) doRequest(alt string) (*http.Response, erro
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveChatModerators.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveChatModerators.list" call.
@@ -17139,7 +17139,7 @@ func (c *LiveStreamsDeleteCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveStreams.delete"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveStreams.delete" call.
@@ -17294,7 +17294,7 @@ func (c *LiveStreamsInsertCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveStreams.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveStreams.insert" call.
@@ -17521,7 +17521,7 @@ func (c *LiveStreamsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveStreams.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveStreams.list" call.
@@ -17750,7 +17750,7 @@ func (c *LiveStreamsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("PUT", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.liveStreams.update"), c.s.client, req)
 }
 
 // Do executes the "youtube.liveStreams.update" call.
@@ -17901,7 +17901,7 @@ func (c *PlaylistItemsDeleteCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.playlistItems.delete"), c.s.client, req)
 }
 
 // Do executes the "youtube.playlistItems.delete" call.
@@ -18024,7 +18024,7 @@ func (c *PlaylistItemsInsertCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.playlistItems.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.playlistItems.insert" call.
@@ -18230,7 +18230,7 @@ func (c *PlaylistItemsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.playlistItems.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.playlistItems.list" call.
@@ -18434,7 +18434,7 @@ func (c *PlaylistItemsUpdateCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("PUT", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.playlistItems.update"), c.s.client, req)
 }
 
 // Do executes the "youtube.playlistItems.update" call.
@@ -18581,7 +18581,7 @@ func (c *PlaylistsDeleteCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.playlists.delete"), c.s.client, req)
 }
 
 // Do executes the "youtube.playlists.delete" call.
@@ -18730,7 +18730,7 @@ func (c *PlaylistsInsertCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.playlists.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.playlists.insert" call.
@@ -18975,7 +18975,7 @@ func (c *PlaylistsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.playlists.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.playlists.list" call.
@@ -19188,7 +19188,7 @@ func (c *PlaylistsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("PUT", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.playlists.update"), c.s.client, req)
 }
 
 // Do executes the "youtube.playlists.update" call.
@@ -19734,7 +19734,7 @@ func (c *SearchListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.search.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.search.list" call.
@@ -20199,7 +20199,7 @@ func (c *SponsorsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.sponsors.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.sponsors.list" call.
@@ -20369,7 +20369,7 @@ func (c *SubscriptionsDeleteCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.subscriptions.delete"), c.s.client, req)
 }
 
 // Do executes the "youtube.subscriptions.delete" call.
@@ -20469,7 +20469,7 @@ func (c *SubscriptionsInsertCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.subscriptions.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.subscriptions.insert" call.
@@ -20732,7 +20732,7 @@ func (c *SubscriptionsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.subscriptions.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.subscriptions.list" call.
@@ -20992,7 +20992,7 @@ func (c *SuperChatEventsListCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.superChatEvents.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.superChatEvents.list" call.
@@ -21224,7 +21224,7 @@ func (c *ThumbnailsSetCall) doRequest(alt string) (*http.Response, error) {
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
 	gensupport.SetGetBody(req, getBody)
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.thumbnails.set"), c.s.client, req)
 }
 
 // Do executes the "youtube.thumbnails.set" call.
@@ -21409,7 +21409,7 @@ func (c *VideoAbuseReportReasonsListCall) doRequest(alt string) (*http.Response,
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.videoAbuseReportReasons.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.videoAbuseReportReasons.list" call.
@@ -21576,7 +21576,7 @@ func (c *VideoCategoriesListCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.videoCategories.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.videoCategories.list" call.
@@ -21733,7 +21733,7 @@ func (c *VideosDeleteCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("DELETE", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.videos.delete"), c.s.client, req)
 }
 
 // Do executes the "youtube.videos.delete" call.
@@ -21864,7 +21864,7 @@ func (c *VideosGetRatingCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.videos.getRating"), c.s.client, req)
 }
 
 // Do executes the "youtube.videos.getRating" call.
@@ -22122,7 +22122,7 @@ func (c *VideosInsertCall) doRequest(alt string) (*http.Response, error) {
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
 	gensupport.SetGetBody(req, getBody)
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.videos.insert"), c.s.client, req)
 }
 
 // Do executes the "youtube.videos.insert" call.
@@ -22457,7 +22457,7 @@ func (c *VideosListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.videos.list"), c.s.client, req)
 }
 
 // Do executes the "youtube.videos.list" call.
@@ -22687,7 +22687,7 @@ func (c *VideosRateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.videos.rate"), c.s.client, req)
 }
 
 // Do executes the "youtube.videos.rate" call.
@@ -22821,7 +22821,7 @@ func (c *VideosReportAbuseCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.videos.reportAbuse"), c.s.client, req)
 }
 
 // Do executes the "youtube.videos.reportAbuse" call.
@@ -22939,7 +22939,7 @@ func (c *VideosUpdateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("PUT", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.videos.update"), c.s.client, req)
 }
 
 // Do executes the "youtube.videos.update" call.
@@ -23144,7 +23144,7 @@ func (c *WatermarksSetCall) doRequest(alt string) (*http.Response, error) {
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
 	gensupport.SetGetBody(req, getBody)
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.watermarks.set"), c.s.client, req)
 }
 
 // Do executes the "youtube.watermarks.set" call.
@@ -23300,7 +23300,7 @@ func (c *WatermarksUnsetCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "youtube.watermarks.unset"), c.s.client, req)
 }
 
 // Do executes the "youtube.watermarks.unset" call.

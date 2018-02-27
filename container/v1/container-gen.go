@@ -3300,7 +3300,7 @@ func (c *ProjectsLocationsGetServerConfigCall) doRequest(alt string) (*http.Resp
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.getServerConfig"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.getServerConfig" call.
@@ -3442,7 +3442,7 @@ func (c *ProjectsLocationsClustersCompleteIpRotationCall) doRequest(alt string) 
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.completeIpRotation"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.completeIpRotation" call.
@@ -3593,7 +3593,7 @@ func (c *ProjectsLocationsClustersCreateCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.create"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.create" call.
@@ -3762,7 +3762,7 @@ func (c *ProjectsLocationsClustersDeleteCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.delete"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.delete" call.
@@ -3946,7 +3946,7 @@ func (c *ProjectsLocationsClustersGetCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.get"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.get" call.
@@ -4123,7 +4123,7 @@ func (c *ProjectsLocationsClustersListCall) doRequest(alt string) (*http.Respons
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.list"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.list" call.
@@ -4265,7 +4265,7 @@ func (c *ProjectsLocationsClustersSetAddonsCall) doRequest(alt string) (*http.Re
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.setAddons"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.setAddons" call.
@@ -4401,7 +4401,7 @@ func (c *ProjectsLocationsClustersSetLegacyAbacCall) doRequest(alt string) (*htt
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.setLegacyAbac"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.setLegacyAbac" call.
@@ -4536,7 +4536,7 @@ func (c *ProjectsLocationsClustersSetLocationsCall) doRequest(alt string) (*http
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.setLocations"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.setLocations" call.
@@ -4671,7 +4671,7 @@ func (c *ProjectsLocationsClustersSetLoggingCall) doRequest(alt string) (*http.R
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.setLogging"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.setLogging" call.
@@ -4806,7 +4806,7 @@ func (c *ProjectsLocationsClustersSetMaintenancePolicyCall) doRequest(alt string
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.setMaintenancePolicy"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.setMaintenancePolicy" call.
@@ -4945,7 +4945,7 @@ func (c *ProjectsLocationsClustersSetMasterAuthCall) doRequest(alt string) (*htt
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.setMasterAuth"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.setMasterAuth" call.
@@ -5080,7 +5080,7 @@ func (c *ProjectsLocationsClustersSetMonitoringCall) doRequest(alt string) (*htt
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.setMonitoring"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.setMonitoring" call.
@@ -5215,7 +5215,7 @@ func (c *ProjectsLocationsClustersSetNetworkPolicyCall) doRequest(alt string) (*
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.setNetworkPolicy"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.setNetworkPolicy" call.
@@ -5350,7 +5350,7 @@ func (c *ProjectsLocationsClustersSetResourceLabelsCall) doRequest(alt string) (
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.setResourceLabels"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.setResourceLabels" call.
@@ -5485,7 +5485,7 @@ func (c *ProjectsLocationsClustersStartIpRotationCall) doRequest(alt string) (*h
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.startIpRotation"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.startIpRotation" call.
@@ -5620,7 +5620,7 @@ func (c *ProjectsLocationsClustersUpdateCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.update"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.update" call.
@@ -5755,7 +5755,7 @@ func (c *ProjectsLocationsClustersUpdateMasterCall) doRequest(alt string) (*http
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.updateMaster"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.updateMaster" call.
@@ -5890,7 +5890,7 @@ func (c *ProjectsLocationsClustersNodePoolsCreateCall) doRequest(alt string) (*h
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.nodePools.create"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.nodePools.create" call.
@@ -6056,7 +6056,7 @@ func (c *ProjectsLocationsClustersNodePoolsDeleteCall) doRequest(alt string) (*h
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.nodePools.delete"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.nodePools.delete" call.
@@ -6253,7 +6253,7 @@ func (c *ProjectsLocationsClustersNodePoolsGetCall) doRequest(alt string) (*http
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.nodePools.get"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.nodePools.get" call.
@@ -6442,7 +6442,7 @@ func (c *ProjectsLocationsClustersNodePoolsListCall) doRequest(alt string) (*htt
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.nodePools.list"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.nodePools.list" call.
@@ -6591,7 +6591,7 @@ func (c *ProjectsLocationsClustersNodePoolsRollbackCall) doRequest(alt string) (
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.nodePools.rollback"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.nodePools.rollback" call.
@@ -6727,7 +6727,7 @@ func (c *ProjectsLocationsClustersNodePoolsSetAutoscalingCall) doRequest(alt str
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.nodePools.setAutoscaling"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.nodePools.setAutoscaling" call.
@@ -6862,7 +6862,7 @@ func (c *ProjectsLocationsClustersNodePoolsSetManagementCall) doRequest(alt stri
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.nodePools.setManagement"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.nodePools.setManagement" call.
@@ -6997,7 +6997,7 @@ func (c *ProjectsLocationsClustersNodePoolsSetSizeCall) doRequest(alt string) (*
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.nodePools.setSize"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.nodePools.setSize" call.
@@ -7133,7 +7133,7 @@ func (c *ProjectsLocationsClustersNodePoolsUpdateCall) doRequest(alt string) (*h
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.clusters.nodePools.update"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.clusters.nodePools.update" call.
@@ -7268,7 +7268,7 @@ func (c *ProjectsLocationsOperationsCancelCall) doRequest(alt string) (*http.Res
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.operations.cancel"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.operations.cancel" call.
@@ -7440,7 +7440,7 @@ func (c *ProjectsLocationsOperationsGetCall) doRequest(alt string) (*http.Respon
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.operations.get"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.operations.get" call.
@@ -7617,7 +7617,7 @@ func (c *ProjectsLocationsOperationsListCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"parent": c.parent,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.locations.operations.list"), c.s.client, req)
 }
 
 // Do executes the "container.projects.locations.operations.list" call.
@@ -7778,7 +7778,7 @@ func (c *ProjectsZonesGetServerconfigCall) doRequest(alt string) (*http.Response
 		"projectId": c.projectId,
 		"zone":      c.zone,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.getServerconfig"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.getServerconfig" call.
@@ -7927,7 +7927,7 @@ func (c *ProjectsZonesClustersAddonsCall) doRequest(alt string) (*http.Response,
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.addons"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.addons" call.
@@ -8081,7 +8081,7 @@ func (c *ProjectsZonesClustersCompleteIpRotationCall) doRequest(alt string) (*ht
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.completeIpRotation"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.completeIpRotation" call.
@@ -8248,7 +8248,7 @@ func (c *ProjectsZonesClustersCreateCall) doRequest(alt string) (*http.Response,
 		"projectId": c.projectId,
 		"zone":      c.zone,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.create"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.create" call.
@@ -8407,7 +8407,7 @@ func (c *ProjectsZonesClustersDeleteCall) doRequest(alt string) (*http.Response,
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.delete"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.delete" call.
@@ -8578,7 +8578,7 @@ func (c *ProjectsZonesClustersGetCall) doRequest(alt string) (*http.Response, er
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.get"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.get" call.
@@ -8735,7 +8735,7 @@ func (c *ProjectsZonesClustersLegacyAbacCall) doRequest(alt string) (*http.Respo
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.legacyAbac"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.legacyAbac" call.
@@ -8904,7 +8904,7 @@ func (c *ProjectsZonesClustersListCall) doRequest(alt string) (*http.Response, e
 		"projectId": c.projectId,
 		"zone":      c.zone,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.list"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.list" call.
@@ -9053,7 +9053,7 @@ func (c *ProjectsZonesClustersLocationsCall) doRequest(alt string) (*http.Respon
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.locations"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.locations" call.
@@ -9207,7 +9207,7 @@ func (c *ProjectsZonesClustersLoggingCall) doRequest(alt string) (*http.Response
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.logging"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.logging" call.
@@ -9361,7 +9361,7 @@ func (c *ProjectsZonesClustersMasterCall) doRequest(alt string) (*http.Response,
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.master"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.master" call.
@@ -9515,7 +9515,7 @@ func (c *ProjectsZonesClustersMonitoringCall) doRequest(alt string) (*http.Respo
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.monitoring"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.monitoring" call.
@@ -9669,7 +9669,7 @@ func (c *ProjectsZonesClustersResourceLabelsCall) doRequest(alt string) (*http.R
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.resourceLabels"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.resourceLabels" call.
@@ -9823,7 +9823,7 @@ func (c *ProjectsZonesClustersSetMaintenancePolicyCall) doRequest(alt string) (*
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.setMaintenancePolicy"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.setMaintenancePolicy" call.
@@ -9981,7 +9981,7 @@ func (c *ProjectsZonesClustersSetMasterAuthCall) doRequest(alt string) (*http.Re
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.setMasterAuth"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.setMasterAuth" call.
@@ -10135,7 +10135,7 @@ func (c *ProjectsZonesClustersSetNetworkPolicyCall) doRequest(alt string) (*http
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.setNetworkPolicy"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.setNetworkPolicy" call.
@@ -10289,7 +10289,7 @@ func (c *ProjectsZonesClustersStartIpRotationCall) doRequest(alt string) (*http.
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.startIpRotation"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.startIpRotation" call.
@@ -10443,7 +10443,7 @@ func (c *ProjectsZonesClustersUpdateCall) doRequest(alt string) (*http.Response,
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.update"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.update" call.
@@ -10600,7 +10600,7 @@ func (c *ProjectsZonesClustersNodePoolsAutoscalingCall) doRequest(alt string) (*
 		"clusterId":  c.clusterId,
 		"nodePoolId": c.nodePoolId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.nodePools.autoscaling"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.nodePools.autoscaling" call.
@@ -10761,7 +10761,7 @@ func (c *ProjectsZonesClustersNodePoolsCreateCall) doRequest(alt string) (*http.
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.nodePools.create"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.nodePools.create" call.
@@ -10921,7 +10921,7 @@ func (c *ProjectsZonesClustersNodePoolsDeleteCall) doRequest(alt string) (*http.
 		"clusterId":  c.clusterId,
 		"nodePoolId": c.nodePoolId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.nodePools.delete"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.nodePools.delete" call.
@@ -11104,7 +11104,7 @@ func (c *ProjectsZonesClustersNodePoolsGetCall) doRequest(alt string) (*http.Res
 		"clusterId":  c.clusterId,
 		"nodePoolId": c.nodePoolId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.nodePools.get"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.nodePools.get" call.
@@ -11282,7 +11282,7 @@ func (c *ProjectsZonesClustersNodePoolsListCall) doRequest(alt string) (*http.Re
 		"zone":      c.zone,
 		"clusterId": c.clusterId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.nodePools.list"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.nodePools.list" call.
@@ -11443,7 +11443,7 @@ func (c *ProjectsZonesClustersNodePoolsRollbackCall) doRequest(alt string) (*htt
 		"clusterId":  c.clusterId,
 		"nodePoolId": c.nodePoolId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.nodePools.rollback"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.nodePools.rollback" call.
@@ -11607,7 +11607,7 @@ func (c *ProjectsZonesClustersNodePoolsSetManagementCall) doRequest(alt string) 
 		"clusterId":  c.clusterId,
 		"nodePoolId": c.nodePoolId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.nodePools.setManagement"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.nodePools.setManagement" call.
@@ -11771,7 +11771,7 @@ func (c *ProjectsZonesClustersNodePoolsSetSizeCall) doRequest(alt string) (*http
 		"clusterId":  c.clusterId,
 		"nodePoolId": c.nodePoolId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.nodePools.setSize"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.nodePools.setSize" call.
@@ -11936,7 +11936,7 @@ func (c *ProjectsZonesClustersNodePoolsUpdateCall) doRequest(alt string) (*http.
 		"clusterId":  c.clusterId,
 		"nodePoolId": c.nodePoolId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.clusters.nodePools.update"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.clusters.nodePools.update" call.
@@ -12097,7 +12097,7 @@ func (c *ProjectsZonesOperationsCancelCall) doRequest(alt string) (*http.Respons
 		"zone":        c.zone,
 		"operationId": c.operationId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.operations.cancel"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.operations.cancel" call.
@@ -12266,7 +12266,7 @@ func (c *ProjectsZonesOperationsGetCall) doRequest(alt string) (*http.Response, 
 		"zone":        c.zone,
 		"operationId": c.operationId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.operations.get"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.operations.get" call.
@@ -12436,7 +12436,7 @@ func (c *ProjectsZonesOperationsListCall) doRequest(alt string) (*http.Response,
 		"projectId": c.projectId,
 		"zone":      c.zone,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "container.projects.zones.operations.list"), c.s.client, req)
 }
 
 // Do executes the "container.projects.zones.operations.list" call.

@@ -401,7 +401,7 @@ func (c *ProjectsGetRemoteConfigCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"project": c.projectid,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "firebaseremoteconfig.projects.getRemoteConfig"), c.s.client, req)
 }
 
 // Do executes the "firebaseremoteconfig.projects.getRemoteConfig" call.
@@ -577,7 +577,7 @@ func (c *ProjectsUpdateRemoteConfigCall) doRequest(alt string) (*http.Response, 
 	googleapi.Expand(req.URL, map[string]string{
 		"project": c.projectid,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "firebaseremoteconfig.projects.updateRemoteConfig"), c.s.client, req)
 }
 
 // Do executes the "firebaseremoteconfig.projects.updateRemoteConfig" call.

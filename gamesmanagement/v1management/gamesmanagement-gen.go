@@ -863,7 +863,7 @@ func (c *AchievementsResetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"achievementId": c.achievementId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.achievements.reset"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.achievements.reset" call.
@@ -984,7 +984,7 @@ func (c *AchievementsResetAllCall) doRequest(alt string) (*http.Response, error)
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.achievements.resetAll"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.achievements.resetAll" call.
@@ -1094,7 +1094,7 @@ func (c *AchievementsResetAllForAllPlayersCall) doRequest(alt string) (*http.Res
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.achievements.resetAllForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.achievements.resetAllForAllPlayers" call.
@@ -1181,7 +1181,7 @@ func (c *AchievementsResetForAllPlayersCall) doRequest(alt string) (*http.Respon
 	googleapi.Expand(req.URL, map[string]string{
 		"achievementId": c.achievementId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.achievements.resetForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.achievements.resetForAllPlayers" call.
@@ -1281,7 +1281,7 @@ func (c *AchievementsResetMultipleForAllPlayersCall) doRequest(alt string) (*htt
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.achievements.resetMultipleForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.achievements.resetMultipleForAllPlayers" call.
@@ -1401,7 +1401,7 @@ func (c *ApplicationsListHiddenCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"applicationId": c.applicationId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.applications.listHidden"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.applications.listHidden" call.
@@ -1562,7 +1562,7 @@ func (c *EventsResetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"eventId": c.eventId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.events.reset"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.events.reset" call.
@@ -1656,7 +1656,7 @@ func (c *EventsResetAllCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.events.resetAll"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.events.resetAll" call.
@@ -1738,7 +1738,7 @@ func (c *EventsResetAllForAllPlayersCall) doRequest(alt string) (*http.Response,
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.events.resetAllForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.events.resetAllForAllPlayers" call.
@@ -1826,7 +1826,7 @@ func (c *EventsResetForAllPlayersCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"eventId": c.eventId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.events.resetForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.events.resetForAllPlayers" call.
@@ -1927,7 +1927,7 @@ func (c *EventsResetMultipleForAllPlayersCall) doRequest(alt string) (*http.Resp
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.events.resetMultipleForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.events.resetMultipleForAllPlayers" call.
@@ -2020,7 +2020,7 @@ func (c *PlayersHideCall) doRequest(alt string) (*http.Response, error) {
 		"applicationId": c.applicationId,
 		"playerId":      c.playerId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.players.hide"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.players.hide" call.
@@ -2128,7 +2128,7 @@ func (c *PlayersUnhideCall) doRequest(alt string) (*http.Response, error) {
 		"applicationId": c.applicationId,
 		"playerId":      c.playerId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.players.unhide"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.players.unhide" call.
@@ -2233,7 +2233,7 @@ func (c *QuestsResetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"questId": c.questId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.quests.reset"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.quests.reset" call.
@@ -2326,7 +2326,7 @@ func (c *QuestsResetAllCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.quests.resetAll"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.quests.resetAll" call.
@@ -2407,7 +2407,7 @@ func (c *QuestsResetAllForAllPlayersCall) doRequest(alt string) (*http.Response,
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.quests.resetAllForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.quests.resetAllForAllPlayers" call.
@@ -2494,7 +2494,7 @@ func (c *QuestsResetForAllPlayersCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"questId": c.questId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.quests.resetForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.quests.resetForAllPlayers" call.
@@ -2594,7 +2594,7 @@ func (c *QuestsResetMultipleForAllPlayersCall) doRequest(alt string) (*http.Resp
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.quests.resetMultipleForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.quests.resetMultipleForAllPlayers" call.
@@ -2679,7 +2679,7 @@ func (c *RoomsResetCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.rooms.reset"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.rooms.reset" call.
@@ -2761,7 +2761,7 @@ func (c *RoomsResetForAllPlayersCall) doRequest(alt string) (*http.Response, err
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.rooms.resetForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.rooms.resetForAllPlayers" call.
@@ -2848,7 +2848,7 @@ func (c *ScoresResetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"leaderboardId": c.leaderboardId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.scores.reset"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.scores.reset" call.
@@ -2969,7 +2969,7 @@ func (c *ScoresResetAllCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.scores.resetAll"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.scores.resetAll" call.
@@ -3079,7 +3079,7 @@ func (c *ScoresResetAllForAllPlayersCall) doRequest(alt string) (*http.Response,
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.scores.resetAllForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.scores.resetAllForAllPlayers" call.
@@ -3166,7 +3166,7 @@ func (c *ScoresResetForAllPlayersCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"leaderboardId": c.leaderboardId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.scores.resetForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.scores.resetForAllPlayers" call.
@@ -3267,7 +3267,7 @@ func (c *ScoresResetMultipleForAllPlayersCall) doRequest(alt string) (*http.Resp
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.scores.resetMultipleForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.scores.resetMultipleForAllPlayers" call.
@@ -3351,7 +3351,7 @@ func (c *TurnBasedMatchesResetCall) doRequest(alt string) (*http.Response, error
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.turnBasedMatches.reset"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.turnBasedMatches.reset" call.
@@ -3434,7 +3434,7 @@ func (c *TurnBasedMatchesResetForAllPlayersCall) doRequest(alt string) (*http.Re
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "gamesManagement.turnBasedMatches.resetForAllPlayers"), c.s.client, req)
 }
 
 // Do executes the "gamesManagement.turnBasedMatches.resetForAllPlayers" call.

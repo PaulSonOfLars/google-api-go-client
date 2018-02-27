@@ -2446,7 +2446,7 @@ func (c *FoldersClearOrgPolicyCall) doRequest(alt string) (*http.Response, error
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.folders.clearOrgPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.folders.clearOrgPolicy" call.
@@ -2589,7 +2589,7 @@ func (c *FoldersGetEffectiveOrgPolicyCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.folders.getEffectiveOrgPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.folders.getEffectiveOrgPolicy" call.
@@ -2733,7 +2733,7 @@ func (c *FoldersGetOrgPolicyCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.folders.getOrgPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.folders.getOrgPolicy" call.
@@ -2870,7 +2870,7 @@ func (c *FoldersListAvailableOrgPolicyConstraintsCall) doRequest(alt string) (*h
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.folders.listAvailableOrgPolicyConstraints"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.folders.listAvailableOrgPolicyConstraints" call.
@@ -3030,7 +3030,7 @@ func (c *FoldersListOrgPoliciesCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.folders.listOrgPolicies"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.folders.listOrgPolicies" call.
@@ -3193,7 +3193,7 @@ func (c *FoldersSetOrgPolicyCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.folders.setOrgPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.folders.setOrgPolicy" call.
@@ -3333,7 +3333,7 @@ func (c *LiensCreateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.liens.create"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.liens.create" call.
@@ -3458,7 +3458,7 @@ func (c *LiensDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.nameid,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.liens.delete"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.liens.delete" call.
@@ -3606,7 +3606,7 @@ func (c *LiensGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.nameid,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.liens.get"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.liens.get" call.
@@ -3770,7 +3770,7 @@ func (c *LiensListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.liens.list"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.liens.list" call.
@@ -3942,7 +3942,7 @@ func (c *OperationsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.operations.get"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.operations.get" call.
@@ -4075,7 +4075,7 @@ func (c *OrganizationsClearOrgPolicyCall) doRequest(alt string) (*http.Response,
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.organizations.clearOrgPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.organizations.clearOrgPolicy" call.
@@ -4218,7 +4218,7 @@ func (c *OrganizationsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"name": c.name,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.organizations.get"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.organizations.get" call.
@@ -4359,7 +4359,7 @@ func (c *OrganizationsGetEffectiveOrgPolicyCall) doRequest(alt string) (*http.Re
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.organizations.getEffectiveOrgPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.organizations.getEffectiveOrgPolicy" call.
@@ -4505,7 +4505,7 @@ func (c *OrganizationsGetIamPolicyCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.organizations.getIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.organizations.getIamPolicy" call.
@@ -4649,7 +4649,7 @@ func (c *OrganizationsGetOrgPolicyCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.organizations.getOrgPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.organizations.getOrgPolicy" call.
@@ -4786,7 +4786,7 @@ func (c *OrganizationsListAvailableOrgPolicyConstraintsCall) doRequest(alt strin
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.organizations.listAvailableOrgPolicyConstraints"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.organizations.listAvailableOrgPolicyConstraints" call.
@@ -4946,7 +4946,7 @@ func (c *OrganizationsListOrgPoliciesCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.organizations.listOrgPolicies"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.organizations.listOrgPolicies" call.
@@ -5108,7 +5108,7 @@ func (c *OrganizationsSearchCall) doRequest(alt string) (*http.Response, error) 
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.organizations.search"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.organizations.search" call.
@@ -5264,7 +5264,7 @@ func (c *OrganizationsSetIamPolicyCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.organizations.setIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.organizations.setIamPolicy" call.
@@ -5405,7 +5405,7 @@ func (c *OrganizationsSetOrgPolicyCall) doRequest(alt string) (*http.Response, e
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.organizations.setOrgPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.organizations.setOrgPolicy" call.
@@ -5545,7 +5545,7 @@ func (c *OrganizationsTestIamPermissionsCall) doRequest(alt string) (*http.Respo
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.organizations.testIamPermissions"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.organizations.testIamPermissions" call.
@@ -5681,7 +5681,7 @@ func (c *ProjectsClearOrgPolicyCall) doRequest(alt string) (*http.Response, erro
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.clearOrgPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.clearOrgPolicy" call.
@@ -5839,7 +5839,7 @@ func (c *ProjectsCreateCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.create"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.create" call.
@@ -5979,7 +5979,7 @@ func (c *ProjectsDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"projectId": c.projectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.delete"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.delete" call.
@@ -6120,7 +6120,7 @@ func (c *ProjectsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"projectId": c.projectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.get"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.get" call.
@@ -6257,7 +6257,7 @@ func (c *ProjectsGetAncestryCall) doRequest(alt string) (*http.Response, error) 
 	googleapi.Expand(req.URL, map[string]string{
 		"projectId": c.projectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.getAncestry"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.getAncestry" call.
@@ -6400,7 +6400,7 @@ func (c *ProjectsGetEffectiveOrgPolicyCall) doRequest(alt string) (*http.Respons
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.getEffectiveOrgPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.getEffectiveOrgPolicy" call.
@@ -6547,7 +6547,7 @@ func (c *ProjectsGetIamPolicyCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.getIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.getIamPolicy" call.
@@ -6690,7 +6690,7 @@ func (c *ProjectsGetOrgPolicyCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.getOrgPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.getOrgPolicy" call.
@@ -6903,7 +6903,7 @@ func (c *ProjectsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.list"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.list" call.
@@ -7065,7 +7065,7 @@ func (c *ProjectsListAvailableOrgPolicyConstraintsCall) doRequest(alt string) (*
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.listAvailableOrgPolicyConstraints"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.listAvailableOrgPolicyConstraints" call.
@@ -7225,7 +7225,7 @@ func (c *ProjectsListOrgPoliciesCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.listOrgPolicies"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.listOrgPolicies" call.
@@ -7448,7 +7448,7 @@ func (c *ProjectsSetIamPolicyCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.setIamPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.setIamPolicy" call.
@@ -7588,7 +7588,7 @@ func (c *ProjectsSetOrgPolicyCall) doRequest(alt string) (*http.Response, error)
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.setOrgPolicy"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.setOrgPolicy" call.
@@ -7726,7 +7726,7 @@ func (c *ProjectsTestIamPermissionsCall) doRequest(alt string) (*http.Response, 
 	googleapi.Expand(req.URL, map[string]string{
 		"resource": c.resource,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.testIamPermissions"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.testIamPermissions" call.
@@ -7869,7 +7869,7 @@ func (c *ProjectsUndeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"projectId": c.projectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.undelete"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.undelete" call.
@@ -8007,7 +8007,7 @@ func (c *ProjectsUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"projectId": c.projectId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "cloudresourcemanager.projects.update"), c.s.client, req)
 }
 
 // Do executes the "cloudresourcemanager.projects.update" call.

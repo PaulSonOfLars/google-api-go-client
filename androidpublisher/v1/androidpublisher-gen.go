@@ -194,7 +194,7 @@ func (c *PurchasesCancelCall) doRequest(alt string) (*http.Response, error) {
 		"subscriptionId": c.subscriptionId,
 		"token":          c.token,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "androidpublisher.purchases.cancel"), c.s.client, req)
 }
 
 // Do executes the "androidpublisher.purchases.cancel" call.
@@ -324,7 +324,7 @@ func (c *PurchasesGetCall) doRequest(alt string) (*http.Response, error) {
 		"subscriptionId": c.subscriptionId,
 		"token":          c.token,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "androidpublisher.purchases.get"), c.s.client, req)
 }
 
 // Do executes the "androidpublisher.purchases.get" call.

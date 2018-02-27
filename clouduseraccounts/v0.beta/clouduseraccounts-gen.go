@@ -1055,7 +1055,7 @@ func (c *GlobalAccountsOperationsDeleteCall) doRequest(alt string) (*http.Respon
 		"project":   c.project,
 		"operation": c.operation,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.globalAccountsOperations.delete"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.globalAccountsOperations.delete" call.
@@ -1177,7 +1177,7 @@ func (c *GlobalAccountsOperationsGetCall) doRequest(alt string) (*http.Response,
 		"project":   c.project,
 		"operation": c.operation,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.globalAccountsOperations.get"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.globalAccountsOperations.get" call.
@@ -1397,7 +1397,7 @@ func (c *GlobalAccountsOperationsListCall) doRequest(alt string) (*http.Response
 	googleapi.Expand(req.URL, map[string]string{
 		"project": c.project,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.globalAccountsOperations.list"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.globalAccountsOperations.list" call.
@@ -1579,7 +1579,7 @@ func (c *GroupsAddMemberCall) doRequest(alt string) (*http.Response, error) {
 		"project":   c.project,
 		"groupName": c.groupName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.groups.addMember"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.groups.addMember" call.
@@ -1718,7 +1718,7 @@ func (c *GroupsDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"project":   c.project,
 		"groupName": c.groupName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.groups.delete"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.groups.delete" call.
@@ -1868,7 +1868,7 @@ func (c *GroupsGetCall) doRequest(alt string) (*http.Response, error) {
 		"project":   c.project,
 		"groupName": c.groupName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.groups.get"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.groups.get" call.
@@ -2011,7 +2011,7 @@ func (c *GroupsInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"project": c.project,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.groups.insert"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.groups.insert" call.
@@ -2224,7 +2224,7 @@ func (c *GroupsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"project": c.project,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.groups.list"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.groups.list" call.
@@ -2406,7 +2406,7 @@ func (c *GroupsRemoveMemberCall) doRequest(alt string) (*http.Response, error) {
 		"project":   c.project,
 		"groupName": c.groupName,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.groups.removeMember"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.groups.removeMember" call.
@@ -2557,7 +2557,7 @@ func (c *LinuxGetAuthorizedKeysViewCall) doRequest(alt string) (*http.Response, 
 		"zone":    c.zone,
 		"user":    c.user,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.linux.getAuthorizedKeysView"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.linux.getAuthorizedKeysView" call.
@@ -2788,7 +2788,7 @@ func (c *LinuxGetLinuxAccountViewsCall) doRequest(alt string) (*http.Response, e
 		"project": c.project,
 		"zone":    c.zone,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.linux.getLinuxAccountViews"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.linux.getLinuxAccountViews" call.
@@ -2966,7 +2966,7 @@ func (c *UsersAddPublicKeyCall) doRequest(alt string) (*http.Response, error) {
 		"project": c.project,
 		"user":    c.user,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.users.addPublicKey"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.users.addPublicKey" call.
@@ -3105,7 +3105,7 @@ func (c *UsersDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"project": c.project,
 		"user":    c.user,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.users.delete"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.users.delete" call.
@@ -3255,7 +3255,7 @@ func (c *UsersGetCall) doRequest(alt string) (*http.Response, error) {
 		"project": c.project,
 		"user":    c.user,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.users.get"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.users.get" call.
@@ -3398,7 +3398,7 @@ func (c *UsersInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"project": c.project,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.users.insert"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.users.insert" call.
@@ -3611,7 +3611,7 @@ func (c *UsersListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"project": c.project,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.users.list"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.users.list" call.
@@ -3787,7 +3787,7 @@ func (c *UsersRemovePublicKeyCall) doRequest(alt string) (*http.Response, error)
 		"project": c.project,
 		"user":    c.user,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "clouduseraccounts.users.removePublicKey"), c.s.client, req)
 }
 
 // Do executes the "clouduseraccounts.users.removePublicKey" call.

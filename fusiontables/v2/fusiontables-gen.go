@@ -1349,7 +1349,7 @@ func (c *ColumnDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"tableId":  c.tableId,
 		"columnId": c.columnId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.column.delete"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.column.delete" call.
@@ -1468,7 +1468,7 @@ func (c *ColumnGetCall) doRequest(alt string) (*http.Response, error) {
 		"tableId":  c.tableId,
 		"columnId": c.columnId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.column.get"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.column.get" call.
@@ -1606,7 +1606,7 @@ func (c *ColumnInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.column.insert"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.column.insert" call.
@@ -1760,7 +1760,7 @@ func (c *ColumnListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.column.list"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.column.list" call.
@@ -1928,7 +1928,7 @@ func (c *ColumnPatchCall) doRequest(alt string) (*http.Response, error) {
 		"tableId":  c.tableId,
 		"columnId": c.columnId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.column.patch"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.column.patch" call.
@@ -2071,7 +2071,7 @@ func (c *ColumnUpdateCall) doRequest(alt string) (*http.Response, error) {
 		"tableId":  c.tableId,
 		"columnId": c.columnId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.column.update"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.column.update" call.
@@ -2222,7 +2222,7 @@ func (c *QuerySqlCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.query.sql"), c.s.client, req)
 }
 
 // Download fetches the API endpoint's "media" value, instead of the normal
@@ -2402,7 +2402,7 @@ func (c *QuerySqlGetCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.query.sqlGet"), c.s.client, req)
 }
 
 // Download fetches the API endpoint's "media" value, instead of the normal
@@ -2557,7 +2557,7 @@ func (c *StyleDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"tableId": c.tableId,
 		"styleId": strconv.FormatInt(c.styleId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.style.delete"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.style.delete" call.
@@ -2677,7 +2677,7 @@ func (c *StyleGetCall) doRequest(alt string) (*http.Response, error) {
 		"tableId": c.tableId,
 		"styleId": strconv.FormatInt(c.styleId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.style.get"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.style.get" call.
@@ -2816,7 +2816,7 @@ func (c *StyleInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.style.insert"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.style.insert" call.
@@ -2970,7 +2970,7 @@ func (c *StyleListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.style.list"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.style.list" call.
@@ -3138,7 +3138,7 @@ func (c *StylePatchCall) doRequest(alt string) (*http.Response, error) {
 		"tableId": c.tableId,
 		"styleId": strconv.FormatInt(c.styleId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.style.patch"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.style.patch" call.
@@ -3282,7 +3282,7 @@ func (c *StyleUpdateCall) doRequest(alt string) (*http.Response, error) {
 		"tableId": c.tableId,
 		"styleId": strconv.FormatInt(c.styleId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.style.update"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.style.update" call.
@@ -3423,7 +3423,7 @@ func (c *TableCopyCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.table.copy"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.table.copy" call.
@@ -3552,7 +3552,7 @@ func (c *TableDeleteCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.table.delete"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.table.delete" call.
@@ -3661,7 +3661,7 @@ func (c *TableGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.table.get"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.table.get" call.
@@ -3876,7 +3876,7 @@ func (c *TableImportRowsCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.table.importRows"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.table.importRows" call.
@@ -4123,7 +4123,7 @@ func (c *TableImportTableCall) doRequest(alt string) (*http.Response, error) {
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
 	gensupport.SetGetBody(req, getBody)
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.table.importTable"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.table.importTable" call.
@@ -4292,7 +4292,7 @@ func (c *TableInsertCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("POST", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.table.insert"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.table.insert" call.
@@ -4430,7 +4430,7 @@ func (c *TableListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.table.list"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.table.list" call.
@@ -4596,7 +4596,7 @@ func (c *TablePatchCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.table.patch"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.table.patch" call.
@@ -4729,7 +4729,7 @@ func (c *TableRefetchSheetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.table.refetchSheet"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.table.refetchSheet" call.
@@ -4946,7 +4946,7 @@ func (c *TableReplaceRowsCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.table.replaceRows"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.table.replaceRows" call.
@@ -5147,7 +5147,7 @@ func (c *TableUpdateCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.table.update"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.table.update" call.
@@ -5282,7 +5282,7 @@ func (c *TaskDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"tableId": c.tableId,
 		"taskId":  c.taskId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.task.delete"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.task.delete" call.
@@ -5401,7 +5401,7 @@ func (c *TaskGetCall) doRequest(alt string) (*http.Response, error) {
 		"tableId": c.tableId,
 		"taskId":  c.taskId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.task.get"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.task.get" call.
@@ -5567,7 +5567,7 @@ func (c *TaskListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.task.list"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.task.list" call.
@@ -5733,7 +5733,7 @@ func (c *TemplateDeleteCall) doRequest(alt string) (*http.Response, error) {
 		"tableId":    c.tableId,
 		"templateId": strconv.FormatInt(c.templateId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.template.delete"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.template.delete" call.
@@ -5853,7 +5853,7 @@ func (c *TemplateGetCall) doRequest(alt string) (*http.Response, error) {
 		"tableId":    c.tableId,
 		"templateId": strconv.FormatInt(c.templateId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.template.get"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.template.get" call.
@@ -5992,7 +5992,7 @@ func (c *TemplateInsertCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.template.insert"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.template.insert" call.
@@ -6146,7 +6146,7 @@ func (c *TemplateListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"tableId": c.tableId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.template.list"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.template.list" call.
@@ -6314,7 +6314,7 @@ func (c *TemplatePatchCall) doRequest(alt string) (*http.Response, error) {
 		"tableId":    c.tableId,
 		"templateId": strconv.FormatInt(c.templateId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.template.patch"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.template.patch" call.
@@ -6458,7 +6458,7 @@ func (c *TemplateUpdateCall) doRequest(alt string) (*http.Response, error) {
 		"tableId":    c.tableId,
 		"templateId": strconv.FormatInt(c.templateId, 10),
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "fusiontables.template.update"), c.s.client, req)
 }
 
 // Do executes the "fusiontables.template.update" call.

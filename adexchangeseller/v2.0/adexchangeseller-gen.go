@@ -1097,7 +1097,7 @@ func (c *AccountsGetCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.get"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.get" call.
@@ -1246,7 +1246,7 @@ func (c *AccountsListCall) doRequest(alt string) (*http.Response, error) {
 	urls += "?" + c.urlParams_.Encode()
 	req, _ := http.NewRequest("GET", urls, body)
 	req.Header = reqHeaders
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.list" call.
@@ -1425,7 +1425,7 @@ func (c *AccountsAdclientsListCall) doRequest(alt string) (*http.Response, error
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.adclients.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.adclients.list" call.
@@ -1606,7 +1606,7 @@ func (c *AccountsAlertsListCall) doRequest(alt string) (*http.Response, error) {
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.alerts.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.alerts.list" call.
@@ -1755,7 +1755,7 @@ func (c *AccountsCustomchannelsGetCall) doRequest(alt string) (*http.Response, e
 		"adClientId":      c.adClientId,
 		"customChannelId": c.customChannelId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.customchannels.get"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.customchannels.get" call.
@@ -1928,7 +1928,7 @@ func (c *AccountsCustomchannelsListCall) doRequest(alt string) (*http.Response, 
 		"accountId":  c.accountId,
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.customchannels.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.customchannels.list" call.
@@ -2108,7 +2108,7 @@ func (c *AccountsMetadataDimensionsListCall) doRequest(alt string) (*http.Respon
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.metadata.dimensions.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.metadata.dimensions.list" call.
@@ -2247,7 +2247,7 @@ func (c *AccountsMetadataMetricsListCall) doRequest(alt string) (*http.Response,
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.metadata.metrics.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.metadata.metrics.list" call.
@@ -2388,7 +2388,7 @@ func (c *AccountsPreferreddealsGetCall) doRequest(alt string) (*http.Response, e
 		"accountId": c.accountId,
 		"dealId":    c.dealId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.preferreddeals.get"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.preferreddeals.get" call.
@@ -2533,7 +2533,7 @@ func (c *AccountsPreferreddealsListCall) doRequest(alt string) (*http.Response, 
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.preferreddeals.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.preferreddeals.list" call.
@@ -2727,7 +2727,7 @@ func (c *AccountsReportsGenerateCall) doRequest(alt string) (*http.Response, err
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.reports.generate"), c.s.client, req)
 }
 
 // Download fetches the API endpoint's "media" value, instead of the normal
@@ -2974,7 +2974,7 @@ func (c *AccountsReportsSavedGenerateCall) doRequest(alt string) (*http.Response
 		"accountId":     c.accountId,
 		"savedReportId": c.savedReportId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.reports.saved.generate"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.reports.saved.generate" call.
@@ -3157,7 +3157,7 @@ func (c *AccountsReportsSavedListCall) doRequest(alt string) (*http.Response, er
 	googleapi.Expand(req.URL, map[string]string{
 		"accountId": c.accountId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.reports.saved.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.reports.saved.list" call.
@@ -3349,7 +3349,7 @@ func (c *AccountsUrlchannelsListCall) doRequest(alt string) (*http.Response, err
 		"accountId":  c.accountId,
 		"adClientId": c.adClientId,
 	})
-	return gensupport.SendRequest(c.ctx_, c.s.client, req)
+	return gensupport.SendRequest(googleapi.MethodIDToContext(c.ctx_, "adexchangeseller.accounts.urlchannels.list"), c.s.client, req)
 }
 
 // Do executes the "adexchangeseller.accounts.urlchannels.list" call.
